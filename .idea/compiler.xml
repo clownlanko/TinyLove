@@ -14,8 +14,16 @@
         <module name="vi_manager_service" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="DEBUGGING_INFO" value="false" />
+    <bytecodeTargetLevel>
+      <module name="background" target="1.8" />
+      <module name="face" target="1.8" />
+      <module name="TinyLove" target="1.8" />
+      <module name="vi_commons" target="1.8" />
+      <module name="vi_manager" target="1.8" />
+      <module name="vi_manager_mapper" target="1.8" />
+      <module name="vi_manager_pojo" target="1.8" />
+      <module name="vi_manager_service" target="1.8" />
+      <module name="vi_manager_web" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
