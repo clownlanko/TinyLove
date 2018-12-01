@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.vi.mapper.impl.ManagerMapper">
+	<!--根据用户名和密码查询做登陆-->
+	<select id="findByUser" resultType="top.genitalbean.vi.pojo.vo.Manager_Role">
+		SELECT user_id AS id,user_name AS userName,password,phone,email,
+		job_name AS jobName,job_remark AS jobRemark,salary,authority_name AS authorityName,
+		authority_remark AS authorityRemark,status FROM manager_role 
+		WHERE user_name=#{name} AND password=#{password};
+	</select>
+	<!--查询所管辖范围内的员工-->
+	<select id="findById" parameterType="java.lang.Integer" resultType="top.genitalbean.vi.pojo.vo.Manager_Role">
+		SELECT mr.user_id AS id,user_name AS userName,password,phone,email,
+			   job_name AS jobName,job_remark AS jobRemark,salary,authority_name AS authorityName,
+			   authority_remark AS authorityRemark,status FROM manager_role mr JOIN vi_role vr ON
+			   mr.user_id=vr.user_id WHERE authority_id=#{authorityId};
+	</select>
+</mapper>
