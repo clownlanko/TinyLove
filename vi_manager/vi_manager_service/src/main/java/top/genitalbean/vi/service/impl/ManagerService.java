@@ -32,7 +32,16 @@ public class ManagerService implements BaseService{
 			throw new NoDataMatchException("No user of named "+name +" or the password is missing.");
 		}
 	}
-
+	/**
+     * 根据用户id查找
+	 */
+    public Manager_Role findByUserId(String userId){
+        Manager_Role manager=managerMapper.findByUserId(userId);
+        if(manager==null){
+            throw new NoDataMatchException("No user of userId as "+userId);
+        }else
+            return manager;
+	}
 	/**
 	 * 根据权限id查找所有可以直接管辖的管理员
 	 * @param id

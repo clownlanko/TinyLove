@@ -333,7 +333,7 @@
                         <li class="home"><a href="javascript:void(0)" name="admin_Competence.html" title="权限管理"
                                             class="iframeurl"><i
                                 class="icon-double-angle-right"></i>权限管理</a></li>
-                        <li class="home"><a href="javascript:void(0)" name="administrator.html" title="管理员列表"
+                        <li class="home"><a href="javascript:void(0)" name="administrator.jsp" title="管理员列表"
                                             class="iframeurl"><i
                                 class="icon-double-angle-right"></i>管理员列表</a></li>
                         <li class="home"><a href="javascript:void(0)" name="manager_info.jsp" title="个人信息"
@@ -372,7 +372,7 @@
             </div>
 
             <iframe id="iframe" style="border:0; width:100%; background-color:#FFF;" name="iframe" frameborder="0"
-                    src="manager_info.jsp">
+                    src="administrator.jsp">
             </iframe>
 
 

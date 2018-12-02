@@ -59,7 +59,7 @@
 									</label>
 									<div class="space"></div>
 									<div class="clearfix">
-										<button type="button"
+										<button accesskey="13" type="button"
 											class="width-35 pull-right btn btn-sm btn-primary"
 											id="login_btn">
 											<i class="icon-key"></i> 登陆

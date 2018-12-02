@@ -59,7 +59,7 @@
 									</label>
 									<div class="space"></div>
 									<div class="clearfix">
-										<button type="button"
+										<button accesskey="13" type="button"
 											class="width-35 pull-right btn btn-sm btn-primary"
 											id="login_btn">
 											<i class="icon-key"></i> 登陆
@@ -107,12 +107,6 @@
 		type:"POST",
 		url:"vim.vi/login.vi",
 		data:$("#login").serialize(),
-		error:function(json){
-            layer.alert(json.message+"错误提示", {
-                title : "微爱提示",
-                icon : 2
-            });
-		},
 		success:function(json){
 			if(json.state==4){
                 layer.confirm(json.message, {

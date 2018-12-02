@@ -14,8 +14,8 @@
     <script src="../assets/laydate/laydate.js" type="text/javascript"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/typeahead-bs2.min.js"></script>
-    <script src="../assets/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/jquery.dataTables.bootstrap.js" async></script>
+    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.min.js"></script>
+    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.bootstrap.js"></script>
     <title>个人信息管理</title>
 </head>
 <body>
@@ -80,15 +80,37 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
-                        <td>VIM000001</td>
-                        <td>lanko</td>
-                        <td>1234567890</td>
-                        <td>clownlanko@vi.com</td>
-                        <td>boss</td>
-                        <td>live</td>
-                    </tr>
+                    <script>
+                        $.ajax({
+                            url:"../vim.vi/vimall.vi?userId=${vim.userId}",
+                            type:"GET",
+                            success:function(json){
+                                if(json.state==3){
+                                    layer.alert(json.message,{
+                                        title:"微爱提示",
+                                        icon:1});
+                                }
+                                if(json.state==4){//响应成功，显示数据
+                                    layer.alert(json.message,{
+                                        title:"微爱提示",
+                                        icon:1});
+                                    var tbody=$("#sample-table").find("tbody");
+                                    for(var i=0;i<json.data.length;i++){
+                                        var tr=$("<tr></tr>");
+                                        var box=$("<td><label><input type='checkbox' class='ace'><span class='lbl'></span></label></td>");
+                                        var id=$("<td><a href=\"javascript:findByUserId('"+json.data[i].userId+"')\">"+json.data[i].userId+"</a></td>");
+                                        var name=$("<td>"+json.data[i].userName+"</td>");
+                                        var phone=$("<td>"+json.data[i].phone+"</td>");
+                                        var email=$("<td>"+json.data[i].email+"</td>");
+                                        var job=$("<td>"+json.data[i].jobName+"</td>");
+                                        var status=$("<td>"+(json.data[i].status==1?"在职":json.data[i].status==-1?"离职":"停职")+"</td>");
+                                        tr.append(box,id,name,phone,email,job,status);
+                                        tbody.append(tr);
+                                    }
+                                }
+                            }
+                        });
+                    </script>
                     </tbody>
                 </table>
             </div>
@@ -104,47 +126,34 @@
                                                                           id="Nes_pas"></li>
         <li><label class="label_name">确认密码</label><input name="repwd" type="password" class="" id="c_mew_pas"></li>
     </ul>
-    <!--       <div class="center"> <button class="btn btn-primary" type="button" id="submit">确认修改</button></div>-->
 </div>
 </body>
 </html>
 <script>
-    $.ajax({
-        url:"../vim.vi/vimall.vi?userId=${vim.userId}",
-        type:"GET",
-        success:function(json){
-            if(json.state==3){
-                layer.alert(json.message,{
-                    title:"微爱提示",
-                    icon:1});
-            }
-            if(json.state==4){//响应成功，显示数据
-                layer.alert(json.message,{
-                    title:"微爱提示",
-                    icon:1});
-                console.info(json.data);
-                var tbody=$("#sample-table").find("tbody").get(0);
-                for(var i=0;i<json.data.length;i++){
-                    var tr=$("<tr></tr>");
-                    var box=$("<td><label><input type=\"checkbox\" class=\"ace\"><span class=\"lbl\"></span></label></td>");
-                    var id=$("<td>"+json.data[i].userId+"</td>");
-                    var name=$("<td>"+json.data[i].userName+"</td>");
-                    var phone=$("<td>"+json.data[i].phone+"</td>");
-                    var email=$("<td>"+json.data[i].email+"</td>");
-                    var job=$("<td>"+json.data[i].jobName+"</td>");
-                    var status=$("<td>"+json.data[i].status+"</td>");
-                    tr.append(box.html());
-                    tr.append(id.html());
-                    tr.append(name.html());
-                    tr.append(phone.html());
-                    tr.append(email.html());
-                    tr.append(job.html());
-                    tr.append(status.html());
-                    tbody.append(tr.html());
+    function findByUserId(e) {
+        $.ajax({
+            url:"../vim.vi/fbui.vi?userId="+e,
+            success:function (json) {
+                if(json.state==4){
+                    var info="用户名:"+json.data.userName;
+                    info+="<br>移动电话:"+json.data.phone;
+                    info+="<br>电子邮箱:"+json.data.email;
+                    info+="<br>权限:"+json.data.authorityName;
+                    info+="<br>职务:"+json.data.jobName;
+                    layer.alert(info,{
+                        title:"微爱提示",
+                        icon:1
+                    })
+                }
+                if(json.state==-1){
+                    layer.alert(json.message,{
+                        title:"微爱提示",
+                        icon:1
+                    })
                 }
             }
-        }
-    });
+        });
+    }
     //按钮点击事件
     function modify() {
         $('.text_info').attr("disabled", false);
@@ -178,13 +187,10 @@
                     "email":$("#email").val()
                 },
                 success:function (json) {
-                    if(json.state==4){
-                        layer.alert(json.message, {
-                            title: '微爱提示',
-                            icon: 1
-                        });
-
-                    }
+                    layer.alert(json.message, {
+                        title: '微爱提示',
+                        icon: 1
+                    });
                 }
             });
             $('#Personal').find('.xinxi').removeClass("hover");
@@ -269,24 +275,13 @@
             }
         });
     }
-</script>
-<script>
-    jQuery(function ($) {
-        var oTable1 = $('#sample-table').dataTable({
-            "aaSorting": [[1, "desc"]],//默认第几个排序
-            "bStateSave": true,//状态保存
-            "aoColumnDefs": [
-                {"orderable": false, "aTargets": [0, 2, 3, 4, 5, 6]}// 制定列不参与排序
-            ]
-        });
-        $('table th input:checkbox').on('click', function () {
-            var that = this;
-            $(this).closest('table').find('tr > td:first-child input:checkbox')
-                .each(function () {
-                    this.checked = that.checked;
-                    $(this).closest('tr').toggleClass('selected');
-                });
+    $('table th input:checkbox').on('click', function () {
+        var that = this;
+        $(this).closest('table').find('tr > td:first-child input:checkbox')
+            .each(function () {
+                this.checked = that.checked;
+                $(this).closest('tr').toggleClass('selected');
+            });
 
-        });
     });
 </script>

@@ -17,6 +17,6 @@ public class ObjectTest {
 	@Autowired private ManagerService managerService;
 	@Test 
 	public void test() {
-		System.out.println(managerService.findByAuthorityId(101));
+		System.out.println(managerService.findByUserId("VIU000005"));
 	}
 }

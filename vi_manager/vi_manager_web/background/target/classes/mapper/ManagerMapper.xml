@@ -10,6 +10,13 @@
 		authority_remark AS authorityRemark,status FROM manager_role 
 		WHERE user_name=#{name} AND password=#{password};
 	</select>
+	<!--根据用户id查询-->
+	<select id="findByUserId" resultType="top.genitalbean.vi.pojo.vo.Manager_Role" parameterType="java.lang.String">
+		SELECT user_id AS userId,user_name AS userName,password,phone,email,
+		job_name AS jobName,job_remark AS jobRemark,salary,authority_name AS authorityName,
+		authority_remark AS authorityRemark,status FROM manager_role
+		WHERE user_id=#{userId};
+	</select>
 	<!--查询所管辖范围内的员工-->
 	<select id="findByAuthorityId" parameterType="java.lang.Integer" resultType="top.genitalbean.vi.pojo.vo.Manager_Role">
 		SELECT mr.user_id AS userId,user_name AS userName,password,phone,email,

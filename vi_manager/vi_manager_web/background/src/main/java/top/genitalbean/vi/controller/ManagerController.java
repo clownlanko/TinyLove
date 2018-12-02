@@ -145,4 +145,20 @@ public class ManagerController extends BaseController{
 		}
 		return result;
 	}
+    /**
+     * 根据userid查询个人数据
+     */
+    @ResponseBody
+    @GetMapping("/fbui.vi")
+    public ResponseResult<Manager_Role> findByUserId(String userId){
+        ResponseResult<Manager_Role> result=new ResponseResult<>();
+        try {
+            result.setState(4);
+            result.setData(managerService.findByUserId(userId));
+        } catch (Exception e) {
+            result.setState(-1);
+            result.setMessage("没有找到"+userId+"用户哦");
+        }
+        return result;
+    }
 }
