@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.ico">
 <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 <link rel="stylesheet" href="assets/css/ace.min.css" />
@@ -106,6 +107,12 @@
 		type:"POST",
 		url:"vim.vi/login.vi",
 		data:$("#login").serialize(),
+		error:function(json){
+            layer.alert(json.message+"错误提示", {
+                title : "微爱提示",
+                icon : 2
+            });
+		},
 		success:function(json){
 			if(json.state==4){
                 layer.confirm(json.message, {

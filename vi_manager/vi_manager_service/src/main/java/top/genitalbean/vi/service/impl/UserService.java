@@ -25,7 +25,7 @@ public class UserService implements BaseService {
 
     @Override
     public <T> boolean update(T t) {
-        return false;
+        return userMapper.update(t)==1;
     }
 
     @Override

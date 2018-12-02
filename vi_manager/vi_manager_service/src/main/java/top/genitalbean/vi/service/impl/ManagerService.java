@@ -23,7 +23,9 @@ public class ManagerService implements BaseService{
 	 * @throws NoDataMatchException
 	 */
 	public Manager_Role findByUser(String name,String password) throws NoDataMatchException{
+		System.out.println("ManagerService.findByUser():name="+name+"password="+password);
 		Manager_Role manager = managerMapper.findByUser(name, password);
+		System.out.println("ManagerService.findByUser():"+manager);
 		if(manager.getUserName().equals(name) && manager.getPassword().equals(password)) {
 			return manager;
 		}else {
@@ -37,14 +39,26 @@ public class ManagerService implements BaseService{
 	 * @return
 	 * @throws NoDataMatchException
 	 */
-	public List<Manager_Role> findById(Integer id) throws NoDataMatchException{
-		List<Manager_Role> roleList = managerMapper.findById(id);
+	public List<Manager_Role> findByAuthorityId(Integer id) throws NoDataMatchException{
+		List<Manager_Role> roleList = managerMapper.findByAuthorityId(id);
 		if(roleList.size()>0)
 			return roleList;
 		else
 			throw new NoDataMatchException("the "+id+"wasn't manager just one");
 	}
 
+	/**
+	 * 根据用户名查找权限
+	 * @param userId
+	 * @return
+	 */
+	public Integer queryAuthorityId(String userId) throws NoDataMatchException {
+		int authorityId=managerMapper.queryAuthoirityId(userId);
+		if(authorityId>0)
+			return authorityId;
+		else
+			throw new NoDataMatchException("the "+userId+"wasn't manager just one");
+	}
 	@Override
 	public <T> boolean insert(T t) {
 		return false;

@@ -8,7 +8,7 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Manager_Role {
-	private String id;
+	private String userId;
 	private String userName;
 	private String password;
 	private String phone;

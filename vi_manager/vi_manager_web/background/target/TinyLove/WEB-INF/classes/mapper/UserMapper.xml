@@ -5,4 +5,12 @@
     <update id="changePassword">
       UPDATE vi_user SET password=#{password} WHERE user_id=#{userId};
     </update>
+    <update id="update">
+        UPDATE vi_user SET
+        <if test="userName!=null">user_name=#{userName},</if>
+        <if test="phone!=null">phone=#{phone},</if>
+        <if test="email!=null">email=#{email},</if>
+        modify_time=#{modifyTime}
+        WHERE user_id=#{userId}
+    </update>
 </mapper>

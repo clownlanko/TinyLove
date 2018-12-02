@@ -6,6 +6,7 @@
     <meta charset="utf-8"/>
     <title>网站后台管理系统 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="../favicon.ico">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../assets/css/ace.min.css"/>
@@ -102,7 +103,6 @@
                         icon: 2,
                     },function () {
                         $.ajax({
-                            type:"DELETE",
                             url:"../vim.vi/logout.vi?vim=${vim.userName}",
                             success:function (json) {
                                 if(json.state==4){
