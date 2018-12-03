@@ -1,20 +1,17 @@
 package top.genitalbean.vi.controller;
 
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import org.springframework.web.bind.annotation.*;
 import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.commons.util.DateFormat;
 import top.genitalbean.vi.commons.web.ResponseResult;
-import top.genitalbean.vi.pojo.ManagerEntity;
 import top.genitalbean.vi.pojo.UserEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
 import top.genitalbean.vi.service.impl.ManagerService;
 import top.genitalbean.vi.service.impl.UserService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -134,11 +131,9 @@ public class ManagerController extends BaseController{
 		try {
 			result.setState(4);
 			result.setMessage("请尊重别人的隐私！");
-			List<Manager_Role> rr=managerService.findByAuthorityId(managerService.queryAuthorityId(userId));
-			System.out.println("所有数据："+rr.size());
-			result.setData(rr);
+			result.setData(managerService.findByAuthorityId(managerService.queryAuthorityId(userId)));
 		} catch (NoDataMatchException e) {
-			result.setMessage("你没有权限哦");
+			result.setMessage("你没有权限查看别人的信息哦");
 			result.setState(3);
 		}
 		return result;
@@ -159,4 +154,16 @@ public class ManagerController extends BaseController{
         }
         return result;
     }
+	/**
+	 * 停用/启用管理员权限
+	 */
+	@ResponseBody
+	@PutMapping("/cs.vi")
+	public ResponseResult<Void> changeStatus(String userId,Integer status){
+		ResponseResult<Void> result=new ResponseResult<>();
+		System.out.println(userId+"-------"+status);
+		result.setState(4);
+		result.setMessage("已停用！");
+		return result;
+	}
 }

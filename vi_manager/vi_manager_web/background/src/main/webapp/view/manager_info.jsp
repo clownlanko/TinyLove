@@ -14,8 +14,8 @@
     <script src="../assets/laydate/laydate.js" type="text/javascript"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/typeahead-bs2.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.bootstrap.js"></script>
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/jquery.dataTables.bootstrap.js"></script>
     <title>个人信息管理</title>
 </head>
 <body>
@@ -154,6 +154,26 @@
             }
         });
     }
+    jQuery(function($) {
+        var oTable1 = $('#sample_table').dataTable({
+            "aaSorting": [[1, "desc"]],//默认第几个排序
+            "bStateSave": true,//状态保存
+            "aoColumnDefs": [
+                //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+                {"orderable": false, "aTargets": [0, 2, 3, 4, 5, 7, 8,]}// 制定列不参与排序
+            ]
+        });
+
+        $('table th input:checkbox').on('click', function () {
+            var that = this;
+            $(this).closest('table').find('tr > td:first-child input:checkbox')
+                .each(function () {
+                    this.checked = that.checked;
+                    $(this).closest('tr').toggleClass('selected');
+                });
+
+        });
+    });
     //按钮点击事件
     function modify() {
         $('.text_info').attr("disabled", false);
@@ -275,13 +295,4 @@
             }
         });
     }
-    $('table th input:checkbox').on('click', function () {
-        var that = this;
-        $(this).closest('table').find('tr > td:first-child input:checkbox')
-            .each(function () {
-                this.checked = that.checked;
-                $(this).closest('tr').toggleClass('selected');
-            });
-
-    });
 </script>

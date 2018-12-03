@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import top.genitalbean.vi.commons.web.ResponseResult;
 import top.genitalbean.vi.pojo.AuthorityEntity;
 import top.genitalbean.vi.service.impl.AuthorityService;
+import top.genitalbean.vi.service.impl.ManagerService;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @RequestMapping("/via.vi")
 public class AuthorityController {
     @Autowired private AuthorityService authorityService;
+    @Autowired private ManagerService managerService;
     @ResponseBody
     @GetMapping("/show.vi")
     public ResponseResult<List<AuthorityEntity>> showDetaile(){

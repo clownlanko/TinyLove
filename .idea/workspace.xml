@@ -6,138 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70da8227-409e-43b0-9704-6502029257ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/background_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/background_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/face_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/face_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="70da8227-409e-43b0-9704-6502029257ed" name="Default Changelist" comment="项目第四天">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TinyLove.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TinyLove.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/NoDataMatchException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/NoDataMatchException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/ServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/ServiceException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/DateFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/DateFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/EncodePrivateContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/EncodePrivateContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/IDGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/IDGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/RegexString.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/RegexString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/web/ResponseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/web/ResponseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_commons/vi_commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/vi_commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/BaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/BaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/ManagerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/ManagerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/vi_manager_mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/vi_manager_mapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/ManagerEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/ManagerEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/vo/Manager_Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/vo/Manager_Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/vi_manager_pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/vi_manager_pojo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/AuthorityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/BaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/ManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/ManagerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/vi_manager_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_service/vi_manager_service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/background.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/background.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/test/java/vi_manager_service/ObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/test/java/vi_manager_service/ObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/META-INF/background.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/ManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/filter/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-io-2.5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-lang3-3.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-lang3-3.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/druid-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/druid-1.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/javax.servlet-api-4.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/lombok-1.16.14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/lombok-1.16.14.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mysql-connector-java-8.0.12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mysql-connector-java-8.0.12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/pagehelper-3.4.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/pagehelper-3.4.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/protobuf-java-2.6.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-api-1.7.12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-api-1.7.12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jdbc-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jdbc-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-orm-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-orm-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-tx-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-tx-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_mapper-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_mapper-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_pojo-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_pojo-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_service-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/view/manager_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/view/manager_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/ManagerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/filter/LoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/m2e-wtp/web-resources/META-INF/maven/top.genitalbean.tinylove/background/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/m2e-wtp/web-resources/META-INF/maven/top.genitalbean.tinylove/background/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/test-classes/vi_manager_service/ObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/test-classes/vi_manager_service/ObjectTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/face.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/face.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/vi_manager_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_manager/vi_manager_web/vi_manager_web.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vi_commons/target/" />
     <ignored path="$PROJECT_DIR$/vi_manager/target/" />
@@ -165,17 +43,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vi@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="vi@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ExecutionTargetDialog">
@@ -257,43 +125,46 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="6" />
-          <entry key="jsp" value="4" />
+          <entry key="jsp" value="10" />
           <entry key="sql" value="3" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="6" />
-          <entry key="JSP" value="4" />
+          <entry key="JSP" value="10" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="207" />
-          <entry key="jsp" value="275" />
-          <entry key="sql" value="31" />
-          <entry key="txt" value="10" />
-          <entry key="xml" value="11" />
+          <entry key="java" value="482" />
+          <entry key="jsp" value="2275" />
+          <entry key="sql" value="312" />
+          <entry key="txt" value="17" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="207" />
-          <entry key="JSP" value="275" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Scratch" value="31" />
-          <entry key="XML" value="11" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="482" />
+          <entry key="JSP" value="2273" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="312" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -303,20 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+            <state relative-caret-position="-2">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -324,10 +183,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="194" column="36" lean-forward="true" selection-start-line="194" selection-start-column="36" selection-end-line="194" selection-end-column="36" />
+            <state relative-caret-position="5862">
+              <caret line="291" column="41" selection-start-line="291" selection-start-column="41" selection-end-line="291" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -335,10 +193,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="102" column="31" lean-forward="true" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="288">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -349,8 +225,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef7dd983-8803-43b3-8864-c143b053fb80/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="98">
+              <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -369,6 +245,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>modify</find>
+      <find>&quot;</find>
+      <find>member_stop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -390,25 +268,25 @@
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/BaseRepository.java" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/UserMapper.java" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/ManagerMapper.java" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/ManagerService.java" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/Authority.java" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/AuthorityEntity.java" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/AuthorityMapper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/vi_manager/pom.xml" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/pom.xml" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ef7dd983-8803-43b3-8864-c143b053fb80/console.sql" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/test/java/vi_manager_service/ObjectTest.java" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/AuthorityService.java" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" />
-        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp" />
         <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ef7dd983-8803-43b3-8864-c143b053fb80/console.sql" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" />
       </list>
     </option>
   </component>
@@ -459,6 +337,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -540,7 +419,29 @@
               <item name="background" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="vi_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="vi_manager_web" type="462c0819:PsiDirectoryNode" />
+              <item name="background" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="vi_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="vi_manager_web" type="462c0819:PsiDirectoryNode" />
+              <item name="background" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -572,22 +473,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vi_manager_service" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543824907679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543838948043" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="/media/kittycoco/WindowsFile/DeveloperSoftware/apache-maven-3.6.0/Repository/mysql/mysql-connector-java/8.0.12/mysql-connector-java-8.0.12.jar" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -635,6 +531,7 @@
       </method>
     </configuration>
     <configuration name="TinyLove" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.5" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/TinyLove/vib/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -646,6 +543,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_TinyLove" />
+        <option name="HTTP_PORT" value="8090" />
+        <option name="JNDI_PORT" value="10000" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -738,6 +637,7 @@
       <workItem from="1543819302341" duration="1407000" />
       <workItem from="1543820744831" duration="1109000" />
       <workItem from="1543822238408" duration="2770000" />
+      <workItem from="1543825345457" duration="13416000" />
     </task>
     <task id="LOCAL-00001" summary="错过的文件">
       <created>1543631148584</created>
@@ -753,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543733996003</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="项目第四天">
+      <created>1543825465528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543825465528</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -789,13 +696,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43650000" />
+    <option name="totallyTimeSpent" value="57066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24015151" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -805,7 +712,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49772727" visible="true" weight="0.27086616" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49772727" visible="true" weight="0.38582677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -818,7 +725,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.41417322" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.23149607" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -839,7 +746,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="错过的文件" />
     <MESSAGE value="第二次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
+    <MESSAGE value="项目第四天" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目第四天" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/favicon.ico">
@@ -1006,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1055,31 +956,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="120" column="41" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="185" column="46" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1097,13 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef7dd983-8803-43b3-8864-c143b053fb80/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/test/java/vi_manager_service/ObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1115,22 +988,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java">
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="448">
+          <caret line="118" column="27" lean-forward="true" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1192">
+          <caret line="84" column="59" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="102" column="31" lean-forward="true" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/ManagerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef7dd983-8803-43b3-8864-c143b053fb80/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/AuthorityMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="194" column="36" lean-forward="true" selection-start-line="194" selection-start-column="36" selection-end-line="194" selection-end-column="36" />
+        <state relative-caret-position="5862">
+          <caret line="291" column="41" selection-start-line="291" selection-start-column="41" selection-end-line="291" selection-end-column="41" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -1138,18 +1042,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        <state relative-caret-position="288">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

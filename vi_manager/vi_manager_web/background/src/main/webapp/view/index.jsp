@@ -100,7 +100,7 @@
             $('#Exit_system').on('click', function () {
                 layer.confirm('是否确定退出系统？', {
                         btn: ['是', '否'], //按钮
-                        icon: 2,
+                        icon: 2
                     },function () {
                         $.ajax({
                             url:"../vim.vi/logout.vi?vim=${vim.userName}",
@@ -217,7 +217,7 @@
     </script>
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
-            <span class="menu-text">123456</span>
+            <span class="menu-text"></span>
         </a>
         <div class="sidebar" id="sidebar">
             <script type="text/javascript">

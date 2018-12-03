@@ -108,7 +108,12 @@
 		url:"vim.vi/login.vi",
 		data:$("#login").serialize(),
 		success:function(json){
-
+            if(json.state==-1){
+                layer.alert(json.message, {
+                    title : "微爱提示",
+                    icon : 2
+                });
+            }
 			if(json.state==4){
                 layer.confirm(json.message, {
                     icon:1,
@@ -123,15 +128,7 @@
                     parent.layer.close(index);
                 });
 			}
-		},
-            error:function (json) {
-                if(json.state==-1){
-                    layer.alert(json.message, {
-                        title : "微爱提示",
-                        icon : 2
-                    });
-                }
-            }
+		}
 	});
 	})
 </script>
