@@ -80,7 +80,7 @@ public class ManagerService implements BaseService{
 
 	@Override
 	public <T> boolean update(T t) {
-		return false;
+		return managerMapper.update(t)==1;
 	}
 
 	@Override

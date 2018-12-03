@@ -20,12 +20,22 @@
 	<!--查询所管辖范围内的员工-->
 	<select id="findByAuthorityId" parameterType="java.lang.Integer" resultType="top.genitalbean.vi.pojo.vo.Manager_Role">
 		SELECT mr.user_id AS userId,user_name AS userName,password,phone,email,
-			   job_name AS jobName,job_remark AS jobRemark,salary,authority_name AS authorityName,
-			   authority_remark AS authorityRemark,status FROM manager_role mr JOIN vi_role vr ON
-			   mr.user_id=vr.user_id WHERE authority_id=#{authorityId};
+       job_name AS jobName,job_remark AS jobRemark,salary,authority_name AS authorityName,
+       authority_remark AS authorityRemark,status FROM manager_role mr JOIN vi_role vr ON
+       mr.user_id=vr.user_id JOIN (SELECT vr.user_id,va.parent_id FROM vi_role vr JOIN
+       vi_authority va ON vr.authority_id=va.authority_id) va ON va.user_id=mr.user_id
+        WHERE va.parent_id=#{authorityId};
 	</select>
 	<!--根据用户id查询权限-->
-<select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
-	SELECT authority_id FROM vi_role WHERE user_id=#{userId}
-</select>
+	<select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
+		SELECT authority_id FROM vi_role WHERE user_id=#{userId}
+	</select>
+	<!--修改管理员状态-->
+	<update id="update" parameterType="top.genitalbean.vi.pojo.ManagerEntity">
+		UPDATE vi_manager SET
+		<if test="salary!=null">salary=#{salary},</if>
+		<if test="status!=null">status=#{status},</if>
+		<if test="jobId!=null">job_id=#{jobId},</if>
+		modify_time=#{modifyTime} WHERE user_id=#{userId};
+	</update>
 </mapper>

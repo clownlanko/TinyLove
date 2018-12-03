@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.commons.util.DateFormat;
 import top.genitalbean.vi.commons.web.ResponseResult;
+import top.genitalbean.vi.pojo.ManagerEntity;
 import top.genitalbean.vi.pojo.UserEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
 import top.genitalbean.vi.service.impl.ManagerService;
@@ -159,11 +160,20 @@ public class ManagerController extends BaseController{
 	 */
 	@ResponseBody
 	@PutMapping("/cs.vi")
-	public ResponseResult<Void> changeStatus(String userId,Integer status){
+	public ResponseResult<Void> changeStatus(HttpSession session,String userId,Integer status){
 		ResponseResult<Void> result=new ResponseResult<>();
-		System.out.println(userId+"-------"+status);
+		if(session.getAttribute("vim")==null){
+			result.setMessage("你的身份信息已过期，请重新登陆!");
+			result.setState(2);
+			return result;
+		}
+		ManagerEntity manager=new ManagerEntity();
+		manager.setUserId(userId);
+		manager.setStatus(status==1?-1:1);
+		manager.setModifyTime(DateFormat.now());
+		managerService.update(manager);
 		result.setState(4);
-		result.setMessage("已停用！");
+		result.setMessage(status==1?"已停用！":"已启用");
 		return result;
 	}
 }

@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Date;
+
+
 @Getter
 @Setter
 @ToString
@@ -12,5 +15,5 @@ public class ManagerEntity {
     private Double salary;
     private Integer jobId;
     private Integer status;
-    private String modifyTime;
+    private Date modifyTime;
 }

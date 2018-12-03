@@ -27,7 +27,15 @@
         WHERE va.parent_id=#{authorityId};
 	</select>
 	<!--根据用户id查询权限-->
-<select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
-	SELECT authority_id FROM vi_role WHERE user_id=#{userId}
-</select>
+	<select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
+		SELECT authority_id FROM vi_role WHERE user_id=#{userId}
+	</select>
+	<!--修改管理员状态-->
+	<update id="update" parameterType="top.genitalbean.vi.pojo.ManagerEntity">
+		UPDATE vi_manager SET
+		<if test="salary!=null">salary=#{salary},</if>
+		<if test="status!=null">status=#{status},</if>
+		<if test="jobId!=null">job_id=#{jobId},</if>
+		modify_time=#{modifyTime} WHERE user_id=#{userId};
+	</update>
 </mapper>
