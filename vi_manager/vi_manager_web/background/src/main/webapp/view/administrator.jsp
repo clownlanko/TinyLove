@@ -14,8 +14,8 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Widget/Validform/5.3.2/Validform.min.js"></script>
     <script src="../assets/js/typeahead-bs2.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.bootstrap.js"></script>
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/jquery.dataTables.bootstrap.js"></script>
     <script src="../assets/layer/layer.js" type="text/javascript" ></script>
     <script src="../js/lrtk.js" type="text/javascript" ></script>
     <script src="../assets/layer/layer.js" type="text/javascript"></script>
@@ -26,21 +26,13 @@
 <div class="page-content clearfix">
     <div class="administrator">
         <div class="d_Confirm_Order_style">
-            <div class="search_style">
-                <div class="title_names">搜索查询</div>
-                <ul class="search_content clearfix">
-                    <li><label class="l_f">管理员名称</label><input name="" type="text"  class="text_add" placeholder=""  style=" width:400px"/></li>
-                    <li><label class="l_f">添加时间</label><input class="inline laydate-icon" id="start" style=" margin-left:10px;"></li>
-                    <li style="width:90px;"><button type="button" class="btn_search"><i class="fa fa-search"></i>查询</button></li>
-                </ul>
-            </div>
             <!--操作-->
             <div class="border clearfix">
        <span class="l_f">
         <a href="javascript:void(0)" id="administrator_add" class="btn btn-warning"><i class="fa fa-plus"></i> 添加管理员</a>
         <a href="javascript:void(0)" class="btn btn-danger"><i class="fa fa-trash"></i> 批量删除</a>
        </span>
-                <span class="r_f">共：<b>5</b>人</span>
+                <span class="r_f">共：<b id="quantity"></b>人</span>
             </div>
             <!--管理员列表-->
             <div class="clearfix administrator_style" id="administrator">
@@ -51,13 +43,7 @@
                             <div class="side_title"><a title="隐藏" class="close_btn"><span></span></a></div>
                             <div class="side_list"><div class="widget-header header-color-green2"><h4 class="lighter smaller">管理员分类列表</h4></div>
                                 <div class="widget-body">
-                                    <ul class="b_P_Sort_list">
-                                        <li><i class="fa fa-users green"></i> <a href="#">全部管理员（13）</a></li>
-                                        <li><i class="fa fa-users orange"></i> <a href="#">超级管理员（1）</a></li>
-                                        <li><i class="fa fa-users orange"></i> <a href="#">普通管理员（5）</a></li>
-                                        <li><i class="fa fa-users orange"></i> <a href="#">产品编辑管理员（4）</a></li>
-                                        <li><i class="fa fa-users orange"></i> <a href="#">管理员（1）</a></li>
-                                    </ul>
+                                    <ul id="widget-body" class="b_P_Sort_list"></ul>
                                 </div>
                             </div>
                         </div>
@@ -67,49 +53,18 @@
                     <table class="table table-striped table-bordered table-hover" id="sample_table">
                         <thead>
                         <tr>
-                            <th width="25px"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
-                            <th width="80px">编号</th>
-                            <th width="250px">登录名</th>
-                            <th width="100px">手机</th>
-                            <th width="100px">邮箱</th>
-                            <th width="100px">角色</th>
-                            <th width="180px">加入时间</th>
+                            <th width="60px"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
+                            <th width="150px">编号</th>
+                            <th width="80px">名字</th>
+                            <th width="150px">手机</th>
+                            <th width="250px">邮箱</th>
+                            <th width="100px">权限</th>
+                            <th width="120px">职务</th>
                             <th width="70px">状态</th>
                             <th width="200px">操作</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
-                            <td>1</td>
-                            <td>admin</td>
-                            <td>18934334544</td>
-                            <td>2345454@qq.com</td>
-                            <td>超级管理员</td>
-                            <td>2016-6-29 12:34</td>
-                            <td class="td-status"><span class="label label-success radius">已启用</span></td>
-                            <td class="td-manage">
-                                <a onClick="member_stop(this,'10001')"  href="javascript:;" title="停用"  class="btn btn-xs btn-success"><i class="fa fa-check  bigger-120"></i></a>
-                                <a title="编辑" onclick="member_edit('编辑','member-add.html','4','','510')" href="javascript:;"  class="btn btn-xs btn-info" ><i class="fa fa-edit bigger-120"></i></a>
-                                <a title="删除" href="javascript:;"  onclick="member_del(this,'1')" class="btn btn-xs btn-warning" ><i class="fa fa-trash  bigger-120"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
-                            <td>2</td>
-                            <td>admin12345</td>
-                            <td>18934334544</td>
-                            <td>2345454@qq.com</td>
-                            <td>管理员</td>
-                            <td>2016-6-29 12:34</td>
-                            <td class="td-status"><span class="label label-success radius">已启用</span></td>
-                            <td class="td-manage">
-                                <a onClick="member_stop(this,'10001')"  href="javascript:;" title="停用"  class="btn btn-xs btn-success"><i class="fa fa-check  bigger-120"></i></a>
-                                <a title="编辑" onclick="member_edit('编辑','member-add.html','4','','510')" href="javascript:;"  class="btn btn-xs btn-info" ><i class="fa fa-edit bigger-120"></i></a>
-                                <a title="删除" href="javascript:;"  onclick="member_del(this,'1')" class="btn btn-xs btn-warning" ><i class="fa fa-trash  bigger-120"></i></a>
-                            </td>
-                        </tr>
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </div>
@@ -189,14 +144,76 @@
 </div>
 </body>
 <script type="text/javascript">
+    //显示权限类别
+    $.ready(
+        $.ajax({
+            url:"../via.vi/show.vi",
+            type:"GET",
+            dataType:"json",
+            success:function (json) {
+                if(json.state==4){
+                    $("#widget-body")
+                    for(var i=0;i<json.data.length;i++){
+                        var manager=json.data[i];
+                        var color="green";
+                        if(i==0)
+                            color="orange";
+                        $("#widget-body").append($("<li><i class='fa fa-users "+color+"'></i>" +
+                            "<a href='javascript:notice();'>"+manager.authorityName+"（"+manager.quantity+"）</a></li>"));
+                    }
+                }
+            }
+        })
+    );
+    function notice(){
+        layer.alert("你没有权限查看其他管理员哦<br>你可以直接管辖的管理员已经在右边显示",{
+            title:"微爱提示",
+            icon:1
+        });
+    }
+    //显示管理员列表
+    $.ajax({
+        url:"../vim.vi/vimall.vi?userId=${vim.userId}",
+        dataType:"json",
+        success:function (json) {
+            if(json.state==3){
+                layer.alert(json.message,{
+                    icon:2,
+                    title:"微爱提示"
+                })
+            }
+            if(json.state==4){
+                $("#quantity").html(json.data.length);
+                var tbody=$("#sample_table").find("tbody");
+                for(var i=0;i<json.data.length;i++){
+                    var tr=$("<tr></tr>");
+                    var box=$("<td><label><input type='checkbox' class='ace'><span class='lbl'></span></label></td>");
+                    var phone=$("<td>"+json.data[i].phone+"</td>");
+                    var email=$("<td>"+json.data[i].email+"</td>");
+                    var authorityName=$("<td>"+json.data[i].authorityName+"</td>");
+                    var jobName=$("<td>"+json.data[i].jobName+"</td>");
+                    var name=$("<td>"+json.data[i].userName+"</td>");
+                    var id=$("<td>"+json.data[i].userId+"</td>");
+                    var status=$("<td class='td-status'><span class='label label-success radius'>"+(json.data[i].status==1?"在职":json.data[i].status==-1?"离职":"停职")+"</span></td>");
+                    var action=$("<td class='td-manage'></td>");
+                    action.append($("<a href=\"javascript:member_stop(this,'"+json.data[i].userId+"',"+json.data[i].status+");\""+" title='停用'  class='btn btn-xs btn-success'><i class='fa fa-check  bigger-120'></i></a>"),
+                        $("<a title='编辑' onclick='member_edit('编辑','member-add.html','4','','510')' href='javascript:;'  class='btn btn-xs btn-info'><i class='fa fa-edit bigger-120'></i></a>"),
+                        $("<a title='删除' href='javascript:;'  onclick='member_del(this,'1')' class='btn btn-xs btn-warning' ><i class='fa fa-trash  bigger-120'></i></a>")
+                    );
+                    tr.append(box,id,name,phone,email,authorityName,jobName,status,action);
+                    tbody.append(tr);
+                }
+            }
+        }
+    });
     jQuery(function($) {
-        var oTable1 = $('#sample_table').dataTable( {
-            "aaSorting": [[ 1, "desc" ]],//默认第几个排序
-            "bStateSave": true,//状态保存
-            "aoColumnDefs": [
-                //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
-                {"orderable":false,"aTargets":[0,2,3,4,5,7,8,]}// 制定列不参与排序
-            ] } );
+        // var oTable1 = $('#sample_table').dataTable( {
+        //     "aaSorting": [[ 1, "desc" ]],//默认第几个排序
+        //     "bStateSave": true,//状态保存
+        //     "aoColumnDefs": [
+        //         //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+        //         {"orderable":false,"aTargets":[0,2,3,4,5,7,8,]}// 制定列不参与排序
+        //     ] } );
 
 
         $('table th input:checkbox').on('click' , function(){
@@ -271,12 +288,25 @@
     });
 
     /*用户-停用*/
-    function member_stop(obj,id){
-        layer.confirm('确认要停用吗？',function(index){
-            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" class="btn btn-xs " onClick="member_start(this,id)" href="javascript:;" title="启用"><i class="fa fa-close bigger-120"></i></a>');
-            $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
-            $(obj).remove();
-            layer.msg('已停用!',{icon: 5,time:1000});
+    function member_stop(obj,id,status){
+        alert($(obj).parent().attr("class"));
+        return;
+        layer.confirm('确认要停用吗？请谨慎操作!',{
+            title:"微爱提示",
+            icon:3,
+            btn:["确定","再想想"]
+            },function(){
+            //停用所管辖人员的权限
+                $.ajax({
+                    url:"../vim.vi/cs.vi?userId="+id+"&status="+status,
+                    dataType:"json",
+                    type:"PUT",
+                    success:function (json) {
+                        if(json.state==4){
+                            // layer.msg(json.message,{icon: 5,time:1000});
+                        }
+                    }
+                });
         });
     }
     /*用户-启用*/

@@ -1,12 +1,15 @@
 package top.genitalbean.vi.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import top.genitalbean.vi.mapper.impl.AuthorityMapper;
 import top.genitalbean.vi.pojo.AuthorityEntity;
 import top.genitalbean.vi.service.BaseService;
 
+import javax.xml.ws.ServiceMode;
 import java.util.List;
 
+@Service
 public class AuthorityService implements BaseService {
     @Autowired
     AuthorityMapper authorityMapper;

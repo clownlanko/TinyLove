@@ -8,7 +8,6 @@
   <artifactId>vi_manager</artifactId>
   <packaging>pom</packaging>
   <modules>
-  	<module>vi_manager_controller</module>
   	<module>vi_manager_web</module>
   	<module>vi_manager_pojo</module>
   	<module>vi_manager_service</module>
