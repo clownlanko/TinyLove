@@ -73,7 +73,6 @@ public class ManagerController extends BaseController{
 	@ResponseBody
 	@RequestMapping("/changepwd.vi")
 	public ResponseResult<Void> changePassword(String username,String oldPwd,String newPwd,HttpSession session){
-		System.out.println("===========================");
 		ResponseResult<Void> result=new ResponseResult<>();
 		Manager_Role user = null;
 		try{
@@ -131,7 +130,6 @@ public class ManagerController extends BaseController{
 	@ResponseBody
 	@GetMapping("/vimall.vi")
 	public ResponseResult<List<Manager_Role>> queryByAuthority(String userId){
-		System.out.println("不知道她来了没有");
 		ResponseResult<List<Manager_Role>> result = new ResponseResult<>();
 		try {
 			result.setState(4);

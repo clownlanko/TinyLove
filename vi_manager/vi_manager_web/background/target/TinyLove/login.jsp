@@ -107,13 +107,8 @@
 		type:"POST",
 		url:"vim.vi/login.vi",
 		data:$("#login").serialize(),
-		error:function(json){
-            layer.alert(json.message+"错误提示", {
-                title : "微爱提示",
-                icon : 2
-            });
-		},
 		success:function(json){
+
 			if(json.state==4){
                 layer.confirm(json.message, {
                     icon:1,
@@ -127,13 +122,16 @@
                 }, function(){
                     parent.layer.close(index);
                 });
-			}else if(json.state==-1){
-                layer.alert(json.message, {
-                    title : "微爱提示",
-                    icon : 2
-                });
 			}
-		}
+		},
+            error:function (json) {
+                if(json.state==-1){
+                    layer.alert(json.message, {
+                        title : "微爱提示",
+                        icon : 2
+                    });
+                }
+            }
 	});
 	})
 </script>

@@ -14,8 +14,8 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Widget/Validform/5.3.2/Validform.min.js"></script>
     <script src="../assets/js/typeahead-bs2.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.min.js"></script>
-    <script src="http://luofengmei.work:8080/car_website/admin/assets/js/jquery.dataTables.bootstrap.js"></script>
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/jquery.dataTables.bootstrap.js"></script>
     <script src="../assets/layer/layer.js" type="text/javascript" ></script>
     <script src="../js/lrtk.js" type="text/javascript" ></script>
     <script src="../assets/layer/layer.js" type="text/javascript"></script>
@@ -50,8 +50,8 @@
                         <div class="widget-box side_content" >
                             <div class="side_title"><a title="隐藏" class="close_btn"><span></span></a></div>
                             <div class="side_list"><div class="widget-header header-color-green2"><h4 class="lighter smaller">管理员分类列表</h4></div>
-                                <div class="widget-body">
-                                    <ul class="b_P_Sort_list">
+                                <div id="widget-body" class="widget-body">
+                                    <ul id="" class="b_P_Sort_list">
                                         <li><i class="fa fa-users green"></i> <a href="#">全部管理员（13）</a></li>
                                         <li><i class="fa fa-users orange"></i> <a href="#">超级管理员（1）</a></li>
                                         <li><i class="fa fa-users orange"></i> <a href="#">普通管理员（5）</a></li>
@@ -189,6 +189,23 @@
 </div>
 </body>
 <script type="text/javascript">
+    //显示权限类别
+    $.read(
+        $.ajax({
+            url:"../via.vi/show.vi",
+            type:"GET",
+            dataType:"json",
+            success:function (json) {
+                if(json.state==4){
+                    $("#widget-body")
+                    for(var manager in json.data){
+                        console.info(manager.userName);
+                    }
+                }
+            }
+        })
+    );
+    $("#widget-body").append();
     jQuery(function($) {
         var oTable1 = $('#sample_table').dataTable( {
             "aaSorting": [[ 1, "desc" ]],//默认第几个排序

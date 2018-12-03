@@ -7,6 +7,7 @@
           <element id="module-output" name="background" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
           <element id="archive" name="vi_manager_service-1.0.jar">
             <element id="module-output" name="vi_manager_service" />
           </element>
@@ -16,7 +17,6 @@
           <element id="archive" name="vi_manager_pojo-1.0.jar">
             <element id="module-output" name="vi_manager_pojo" />
           </element>
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.0" />
           <element id="archive" name="vi_commons-1.0.jar">
             <element id="module-output" name="vi_commons" />
           </element>

@@ -131,7 +131,6 @@
 </html>
 <script>
     function findByUserId(e) {
-        alert(e);
         $.ajax({
             url:"../vim.vi/fbui.vi?userId="+e,
             success:function (json) {
@@ -188,13 +187,10 @@
                     "email":$("#email").val()
                 },
                 success:function (json) {
-                    if(json.state==4){
-                        layer.alert(json.message, {
-                            title: '微爱提示',
-                            icon: 1
-                        });
-
-                    }
+                    layer.alert(json.message, {
+                        title: '微爱提示',
+                        icon: 1
+                    });
                 }
             });
             $('#Personal').find('.xinxi').removeClass("hover");
