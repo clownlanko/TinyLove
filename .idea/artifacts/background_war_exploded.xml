@@ -1,20 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="background:war exploded">
     <output-path>$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove</output-path>
-    <properties id="maven-jee-properties">
-      <options>
-        <exploded>true</exploded>
-        <module>background</module>
-        <packaging>war</packaging>
-      </options>
-    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="background" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.0" />
           <element id="archive" name="vi_manager_service-1.0.jar">
             <element id="module-output" name="vi_manager_service" />
           </element>

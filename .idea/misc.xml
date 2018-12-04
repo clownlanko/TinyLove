@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background" />
     <file type="web" url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/face" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

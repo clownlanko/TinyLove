@@ -15,5 +15,6 @@ public class ManagerEntity {
     private Double salary;
     private Integer jobId;
     private Integer status;
+    private Date joinTime;
     private Date modifyTime;
 }

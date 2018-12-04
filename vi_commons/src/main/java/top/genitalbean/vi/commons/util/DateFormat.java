@@ -14,7 +14,7 @@ public class DateFormat {
     public static final String DATE="yyyy-MM-dd";
     public static final String DATE_TIME=DATE+" HH:mm:ss";
     public static final String DATE_TIME_WEEK=DATE_TIME+" E";
-    public static final SimpleDateFormat sdf=new SimpleDateFormat();
+    private static final SimpleDateFormat sdf=new SimpleDateFormat();
 
     /**
      * @param format 格式化模板
@@ -36,5 +36,8 @@ public class DateFormat {
     public static final String decode(@NonNull Date time,@NonNull String format){
         sdf.applyPattern(format);
         return sdf.format(time);
+    }
+    public static final long differenDate(Date s, Date e){
+        return Math.abs(s.getTime()-e.getTime())/1000/60/60/24/30;
     }
 }

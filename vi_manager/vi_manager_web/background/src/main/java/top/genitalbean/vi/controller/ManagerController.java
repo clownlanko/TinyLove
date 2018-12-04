@@ -9,6 +9,7 @@ import top.genitalbean.vi.commons.web.ResponseResult;
 import top.genitalbean.vi.pojo.ManagerEntity;
 import top.genitalbean.vi.pojo.UserEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
+import top.genitalbean.vi.service.impl.JobService;
 import top.genitalbean.vi.service.impl.ManagerService;
 import top.genitalbean.vi.service.impl.UserService;
 
@@ -20,6 +21,7 @@ import java.util.List;
 public class ManagerController extends BaseController{
 	@Autowired private ManagerService managerService;
 	@Autowired private UserService userService;
+	@Autowired private JobService jobService;
 	/**
 	 * 用户登陆
 	 * @param name
@@ -43,6 +45,7 @@ public class ManagerController extends BaseController{
 		} catch (NoDataMatchException e) {
 			result.setState(-1);
 			result.setMessage("请检查你的用户名或密码");
+            System.out.println("ManagerController.login(...):"+e.getMessage());
 		}
 		return result;
 	}
@@ -160,8 +163,8 @@ public class ManagerController extends BaseController{
 	 */
 	@ResponseBody
 	@PutMapping("/cs.vi")
-	public ResponseResult<Void> changeStatus(HttpSession session,String userId,Integer status){
-		ResponseResult<Void> result=new ResponseResult<>();
+	public ResponseResult<Void> changeStatus(HttpSession session,String userId,Integer status,String jobName){
+	    ResponseResult<Void> result=new ResponseResult<>();
 		if(session.getAttribute("vim")==null){
 			result.setMessage("你的身份信息已过期，请重新登陆!");
 			result.setState(2);
@@ -169,11 +172,39 @@ public class ManagerController extends BaseController{
 		}
 		ManagerEntity manager=new ManagerEntity();
 		manager.setUserId(userId);
-		manager.setStatus(status==1?-1:1);
+		manager.setStatus(status==1?0:1);
 		manager.setModifyTime(DateFormat.now());
-		managerService.update(manager);
-		result.setState(4);
-		result.setMessage(status==1?"已停用！":"已启用");
+		manager.setJobId(jobService.findBuJob(jobName).getJobId());
+		if(managerService.update(manager)){
+			result.setState(4);
+			result.setMessage(status==1?"已停用！":"已启用");
+		}
+		return result;
+	}
+	/**
+	 * 删除管理员
+	 */
+	@ResponseBody
+	@DeleteMapping("/dm.vi")
+	public ResponseResult<Void> deleteManager(String userId){
+		ResponseResult<Void> result=new ResponseResult<>();
+		ManagerEntity manager = null;
+		try{
+			manager = managerService.findByUser(userId);
+		}catch (NoDataMatchException ex){
+			result.setMessage("请稍后再试");
+			result.setState(-1);
+		}
+		if(DateFormat.differenDate(manager.getModifyTime(),manager.getJoinTime())>6){
+			if(managerService.delete(manager.getUserId())){
+				result.setMessage("用户Id为"+
+						userId+"已删除");
+				result.setState(4);
+			}
+		}else{
+			result.setState(3);
+			result.setMessage("id为"+userId+"的用户离职还未超过6个月<br>暂不允许删除！");
+		}
 		return result;
 	}
 }

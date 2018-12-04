@@ -147,7 +147,7 @@
     //显示权限类别
     $.ready(
         $.ajax({
-            url:"../via.vi/show.vi",
+            url:"../via.vi/show.vi?userId=${vim.userId}",
             type:"GET",
             dataType:"json",
             success:function (json) {
@@ -183,7 +183,7 @@
                 })
             }
             if(json.state==4){
-                $("#quantity").html(json.data.length);
+                $("#quantity").html(json.data.length==null?0:json.data.length);
                 var tbody=$("#sample_table").find("tbody");
                 for(var i=0;i<json.data.length;i++){
                     var tr=$("<tr></tr>");
@@ -194,14 +194,20 @@
                     var jobName=$("<td>"+json.data[i].jobName+"</td>");
                     var name=$("<td>"+json.data[i].userName+"</td>");
                     var id=$("<td>"+json.data[i].userId+"</td>");
-                    var status=$("<td class='td-status'><span class='label label-success radius'>"+(json.data[i].status==1?"在职":json.data[i].status==-1?"离职":"停职")+"</span></td>");
                     var action=$("<td class='td-manage'></td>");
-                    action.append($("<a onclick=\'member_stop(this,\""+json.data[i].userId+"\","+json.data[i].status+
-                        ")\' href='#' title='停用' class='btn btn-xs btn-success'><i class='fa fa-check  bigger-120'></i></a>"),
+                    var status=json.data[i].status;
+                    var state=$("<td class='td-status'><span class='"+
+                        (status==1?"label label-success radius":"label label-defaunt radius")+
+                        "'>"+ (status==1?"在职":status==-1?"离职":"停职") +"</span></td>");
+
+                    var method=status==1?"member_stop(this,'"+json.data[i].userId+"',"+status+",'"+json.data[i].jobName+"')":
+                               status==0?"member_start(this,'"+json.data[i].userId+"',"+status+",'"+json.data[i].jobName+"')":"";
+                    action .append($("<a onclick="+method+" href='#' title='"+(status==0?"启用":status==1?"停用":"已离职")+
+                        "' class='"+(status==1?"btn btn-xs btn-success":"btn btn-xs")+"'><i class='fa fa-check  bigger-120'></i></a>"),
                         $("<a title='编辑' onclick='member_edit('编辑','member-add.html','4','','510')' href='#'  class='btn btn-xs btn-info'><i class='fa fa-edit bigger-120'></i></a>"),
-                        $("<a title='删除' href='#'  onclick='member_del(this,'1')' class='btn btn-xs btn-warning' ><i class='fa fa-trash  bigger-120'></i></a>")
+                        $("<a title='删除' href='#'  onclick='member_del(this,'"+json.data[i].userId+"')' class='btn btn-xs btn-warning' ><i class='fa fa-trash  bigger-120'></i></a>")
                     );
-                    tr.append(box,id,name,phone,email,authorityName,jobName,status,action);
+                    tr.append(box,id,name,phone,email,authorityName,jobName,state,action);
                     tbody.append(tr);
                 }
             }
@@ -289,38 +295,49 @@
     });
 
     /*用户-停用*/
-    function member_stop(obj,id,status){
+    function member_stop(obj,id,status,jobName){
         layer.confirm('确认要停用吗？',{
             title:"微爱提示",
             icon:3,
             btn:["确定","再想想"]
         },function(){
-            changeStatus(obj,id,status);
-            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" class="btn btn-xs " onClick="member_start(this,id)" href="javascript:;" title="启用"><i class="fa fa-close bigger-120"></i></a>');
-            $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
-            $(obj).remove();
-        });
-    }
-    //更改用户状态
-    function changeStatus(obj,id,status){
-        $.ajax({
-            url: "../vim.vi/cs.vi?userId=" + id + "&status=" + status,
-            dataType: "json",
-            type: "PUT",
-            success: function (json) {
-                if (json.state == 4) {
-                    layer.msg(json.message,{icon: 5,time:1000});
+            $.ajax({
+                url: "../vim.vi/cs.vi?userId=" + id + "&status=" + status +"&jobName="+jobName,
+                dataType: "json",
+                type: "PUT",
+                success: function (json) {
+                    if (json.state == 4) {
+                        layer.msg(json.message,{icon: 5,time:1000});
+                        var method="member_start(this,'"+id+"',"+status+",'"+jobName+"')";
+                        $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" class="btn btn-xs " onClick="'+method+'" href="#" title="启用"><i class="fa fa-close bigger-120"></i></a>');
+                        $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">停职</span>');
+                        $(obj).remove();
+                    }
                 }
-            }
+            });
         });
     }
     /*用户-启用*/
-    function member_start(obj,id,status){
-        layer.confirm('确认要启用吗？',function(){
-            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" class="btn btn-xs btn-success" onClick="member_stop(this,id)" href="javascript:;" title="停用"><i class="fa fa-check  bigger-120"></i></a>');
-            $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
-            $(obj).remove();
-            layer.msg('已启用!',{icon: 6,time:1000});
+    function member_start(obj,id,status,jobName){
+        layer.confirm('确认要启用吗？',{
+            title:"微爱提示",
+            icon:1,
+            btn:["确定","再想想"]
+        },function(){
+            $.ajax({
+                url: "../vim.vi/cs.vi?userId=" + id + "&status=" + status + "&jobName="+jobName,
+                dataType: "json",
+                type: "PUT",
+                success: function (json) {
+                    if (json.state == 4) {
+                        var method="member_stop(this,'"+id+"',"+status+",'"+jobName+"')";
+                        layer.msg(json.message,{icon: 6,time:1000});
+                        $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" class="btn btn-xs btn-success" onClick="'+method+'" href="#" title="停用"><i class="fa fa-check  bigger-120"></i></a>');
+                        $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">在职</span>');
+                        $(obj).remove();
+                    }
+                }
+            });
         });
     }
     /*产品-编辑*/
@@ -329,10 +346,29 @@
     }
 
     /*产品-删除*/
-    function member_del(obj,id){
-        layer.confirm('确认要删除吗？',function(index){
-            $(obj).parents("tr").remove();
-            layer.msg('已删除!',{icon:1,time:1000});
+    function member_del(obj,userId){
+        layer.confirm('确认要删除吗？',{
+            title:"微爱提示",
+            icon:1,
+            btn:["确定","再想想"]
+        },function(){
+            $.ajax({
+                url:"../vim.vi/dm.vi?userId="+userId,
+                type:"DELETE",
+                dataType:"json",
+                success:function (json) {
+                    if(json.state==4){
+                        layer.msg(json.message,{icon:1,time:1000});
+                        $(obj).parents("tr").remove();
+                    }
+                    if(json.state==3){
+                        layer.msg(json.message,{icon:5,time:1000});
+                    }
+                    if(json.state==-1){
+                        layer.msg(json.message,{icon:2,time:1000});
+                    }
+                }
+            });
         });
     }
     /*添加管理员*/

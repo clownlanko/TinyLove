@@ -23,22 +23,27 @@ public class ManagerService implements BaseService{
 	 * @throws NoDataMatchException
 	 */
 	public Manager_Role findByUser(String name,String password) throws NoDataMatchException{
-		System.out.println("ManagerService.findByUser():name="+name+"password="+password);
 		Manager_Role manager = managerMapper.findByUser(name, password);
-		System.out.println("ManagerService.findByUser():"+manager);
 		if(manager.getUserName().equals(name) && manager.getPassword().equals(password)) {
 			return manager;
 		}else {
-			throw new NoDataMatchException("No user of named "+name +" or the password is missing.");
+			throw new NoDataMatchException("No manager of named "+name +" or the password is missing.");
 		}
 	}
+	public ManagerEntity findByUser(String userId){
+        ManagerEntity manager = managerMapper.findByUser(userId);
+        if(manager!=null)
+            return manager;
+        else
+            throw new NoDataMatchException("No manager of userId as "+userId);
+    }
 	/**
      * 根据用户id查找
 	 */
     public Manager_Role findByUserId(String userId){
         Manager_Role manager=managerMapper.findByUserId(userId);
         if(manager==null){
-            throw new NoDataMatchException("No user of userId as "+userId);
+            throw new NoDataMatchException("No manager of userId as "+userId);
         }else
             return manager;
 	}

@@ -17,6 +17,11 @@
 		authority_remark AS authorityRemark,status FROM manager_role
 		WHERE user_id=#{userId};
 	</select>
+	<select id="findByUser" resultType="top.genitalbean.vi.pojo.ManagerEntity" parameterType="java.lang.String">
+		SELECT user_id AS userId,job_id AS jobId,salary,status,
+		join_time AS joinTime,modify_time AS modifyTime
+		from vi_manager WHERE user_id=#{userId};
+	</select>
 	<!--查询所管辖范围内的员工-->
 	<select id="findByAuthorityId" parameterType="java.lang.Integer" resultType="top.genitalbean.vi.pojo.vo.Manager_Role">
 		SELECT mr.user_id AS userId,user_name AS userName,password,phone,email,
@@ -28,14 +33,16 @@
 	</select>
 	<!--根据用户id查询权限-->
 	<select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
-		SELECT authority_id FROM vi_role WHERE user_id=#{userId}
+		SELECT authority_id FROM vi_role WHERE user_id=#{userId};
 	</select>
 	<!--修改管理员状态-->
 	<update id="update" parameterType="top.genitalbean.vi.pojo.ManagerEntity">
 		UPDATE vi_manager SET
 		<if test="salary!=null">salary=#{salary},</if>
 		<if test="status!=null">status=#{status},</if>
-		<if test="jobId!=null">job_id=#{jobId},</if>
-		modify_time=#{modifyTime} WHERE user_id=#{userId};
+		modify_time=#{modifyTime} WHERE user_id=#{userId} AND job_id=#{jobId};
 	</update>
+	<delete id="delete" parameterType="java.lang.Integer">
+		DELETE FROM vi_manager WHERE user_id=#{userId};
+	</delete>
 </mapper>

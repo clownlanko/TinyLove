@@ -2,6 +2,7 @@ package top.genitalbean.vi.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.mapper.impl.AuthorityMapper;
 import top.genitalbean.vi.pojo.AuthorityEntity;
 import top.genitalbean.vi.service.BaseService;
@@ -11,8 +12,7 @@ import java.util.List;
 
 @Service
 public class AuthorityService implements BaseService {
-    @Autowired
-    AuthorityMapper authorityMapper;
+    @Autowired AuthorityMapper authorityMapper;
     @Override
     public <T> boolean insert(T t) {
         return false;
@@ -32,7 +32,14 @@ public class AuthorityService implements BaseService {
     public <T> List<T> query() {
         return null;
     }
-    public List<AuthorityEntity> queryGroupByAuthority(){
-        return authorityMapper.queryGroupByAuthority();
+    public List<AuthorityEntity> queryGroupByAuthority(Integer parentId){
+        return authorityMapper.queryGroupByAuthority(parentId);
+    }
+    public Integer findByUserId(String userId) throws NoDataMatchException{
+        Integer authorityId = authorityMapper.findByUserId(userId);
+        if(authorityId!=null && authorityId>0)
+            return authorityId;
+        else
+            throw new NoDataMatchException("No user of userId as "+userId);
     }
 }

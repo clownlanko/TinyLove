@@ -118,14 +118,9 @@
                 layer.confirm(json.message, {
                     icon:1,
 					title:"是否进入",
-                    btn: ['进入','取消'] ,
-					cancel: function(){
-                        parent.layer.close(index);
-                    }
+                    btn: ['进入','取消']
                 }, function(){
                    location.href = "view/index.jsp";
-                }, function(){
-                    parent.layer.close(index);
                 });
 			}
 		}

@@ -12,4 +12,5 @@ public interface ManagerMapper extends BaseRepository{
 	Manager_Role findByUser(@Param("name") String name,@Param("password") String password);
 	List<Manager_Role> findByAuthorityId(Integer authorityId);
 	Integer queryAuthoirityId(String userId);
+	ManagerEntity findByUser(String userId);
 }
