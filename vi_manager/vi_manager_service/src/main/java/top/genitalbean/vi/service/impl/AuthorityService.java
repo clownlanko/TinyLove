@@ -30,7 +30,7 @@ public class AuthorityService implements BaseService {
 
     @Override
     public <T> List<T> query() {
-        return null;
+        return authorityMapper.query();
     }
     public List<AuthorityEntity> queryGroupByAuthority(Integer parentId){
         return authorityMapper.queryGroupByAuthority(parentId);

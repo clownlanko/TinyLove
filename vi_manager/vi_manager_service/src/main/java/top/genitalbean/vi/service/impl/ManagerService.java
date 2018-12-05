@@ -14,7 +14,6 @@ import top.genitalbean.vi.service.BaseService;
 @Service
 public class ManagerService implements BaseService{
 	@Autowired private ManagerMapper managerMapper;
-
 	/**
 	 * 根据用户名和密码查找管理员
 	 * @param name
@@ -30,8 +29,14 @@ public class ManagerService implements BaseService{
 			throw new NoDataMatchException("No manager of named "+name +" or the password is missing.");
 		}
 	}
-	public ManagerEntity findByUser(String userId){
-        ManagerEntity manager = managerMapper.findByUser(userId);
+
+	/**
+	 * 根据用户id查询管理员
+	 * @param userId
+	 * @return
+	 */
+	public ManagerEntity findById(String userId)throws NoDataMatchException{
+        ManagerEntity manager = managerMapper.findById(userId);
         if(manager!=null)
             return manager;
         else
@@ -40,7 +45,7 @@ public class ManagerService implements BaseService{
 	/**
      * 根据用户id查找
 	 */
-    public Manager_Role findByUserId(String userId){
+    public Manager_Role findByUserId(String userId)throws NoDataMatchException{
         Manager_Role manager=managerMapper.findByUserId(userId);
         if(manager==null){
             throw new NoDataMatchException("No manager of userId as "+userId);
@@ -61,21 +66,9 @@ public class ManagerService implements BaseService{
 			throw new NoDataMatchException("the "+id+"wasn't manager just one");
 	}
 
-	/**
-	 * 根据用户名查找权限
-	 * @param userId
-	 * @return
-	 */
-	public Integer queryAuthorityId(String userId) throws NoDataMatchException {
-		int authorityId=managerMapper.queryAuthoirityId(userId);
-		if(authorityId>0)
-			return authorityId;
-		else
-			throw new NoDataMatchException("the "+userId+"wasn't manager just one");
-	}
 	@Override
 	public <T> boolean insert(T t) {
-		return false;
+		return managerMapper.insert(t)==1;
 	}
 
 	@Override

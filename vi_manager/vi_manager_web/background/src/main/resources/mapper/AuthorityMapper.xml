@@ -13,4 +13,8 @@
     <select id="findByUserId" resultType="java.lang.Integer" parameterType="java.lang.String">
         SELECT authority_id FROM vi_role WHERE user_id=#{userId}
     </select>
+    <select id="query" resultType="top.genitalbean.vi.pojo.AuthorityEntity">
+        SELECT authority_id AS authorityId ,authority_name AS authorityName,
+        authority_remark AS authorityRemark ,parent_id AS parentId FROM vi_authority
+    </select>
 </mapper>

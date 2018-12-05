@@ -7,6 +7,8 @@ import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.mapper.impl.JobMapper;
 import top.genitalbean.vi.pojo.JobEntity;
 
+import java.util.List;
+
 @Service
 public class JobService {
     @Autowired private JobMapper jobMapper;
@@ -16,5 +18,8 @@ public class JobService {
             return job;
         else
             throw new NoDataMatchException("There's not any job named "+jobName);
+    }
+    public List<JobEntity> query(){
+        return jobMapper.query();
     }
 }

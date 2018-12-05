@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="face:war exploded">
     <output-path>$PROJECT_DIR$/vi_manager/vi_manager_web/face/target/TinyLove</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>face</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -16,7 +23,7 @@
           <element id="archive" name="vi_manager_pojo-1.0.jar">
             <element id="module-output" name="vi_manager_pojo" />
           </element>
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.0" />
           <element id="archive" name="vi_commons-1.0.jar">
             <element id="module-output" name="vi_commons" />
           </element>

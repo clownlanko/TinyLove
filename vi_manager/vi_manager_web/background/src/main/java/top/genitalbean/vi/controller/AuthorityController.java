@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.commons.web.ResponseResult;
 import top.genitalbean.vi.pojo.AuthorityEntity;
+import top.genitalbean.vi.pojo.JobEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
 import top.genitalbean.vi.service.impl.AuthorityService;
 import top.genitalbean.vi.service.impl.ManagerService;
@@ -35,11 +36,17 @@ public class AuthorityController {
         }catch (NoDataMatchException ex){
             result.setState(-1);
             result.setMessage("你没有权限哦<br>或者你的登录信息已过期，请重新登录");
-            System.out.println("AuthorityController.showDetaile(...):"+ex.getMessage());
         }
-        System.out.println("AuthorityController.showDetaile(...):"+authorityId);
         result.setState(4);
         result.setData(authorityService.queryGroupByAuthority(authorityId));
         return result;
+    }
+    /**
+     * 查询所有
+     */
+    @ResponseBody
+    @GetMapping("/query.vi")
+    public ResponseResult<List<JobEntity>> query(){
+        return new ResponseResult<>(authorityService.query());
     }
 }

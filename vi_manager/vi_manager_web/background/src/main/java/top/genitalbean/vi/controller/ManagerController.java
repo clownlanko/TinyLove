@@ -230,15 +230,13 @@ public class ManagerController extends BaseController{
 	@ResponseBody
 	@PostMapping("/am.vi")
 	public ResponseResult<Void> addManager(ManagerEntity manager,Integer authorityId){
+		System.out.println(manager.getUserId()+":"+manager.getJobId()+":"+authorityId);
 		System.out.println("ManagerController.addManager(...)");
 		ResponseResult<Void> result = new ResponseResult<>();
 		if(addJob(manager)){
 			if(addAuthority(manager.getUserId(),authorityId)){
 				result.setState(4);
 				result.setMessage("恭喜"+manager.getUserId()+"成为管理员<br>请您多多照顾");
-			}else {
-				result.setState(-1);
-				result.setMessage("添加权限失败");
 			}
 		}else{
 			result.setState(-1);
@@ -253,18 +251,18 @@ public class ManagerController extends BaseController{
 	 * @param authorityId
 	 * @return
 	 */
-	private boolean addAuthority(String userId, Integer authorityId){
+	public boolean addAuthority(String userId, Integer authorityId){
 		//判断该管理员是否拥有此权限
-		boolean flag=true;
+		int flag=-1;
 		try {
 			//拥有此权限
 			if(roleService.queryAuthorityId(userId) == authorityId){
-				flag=false;
+				flag++;
 			}
 		} catch (NoDataMatchException e) {//未拥有此权限
-			flag=roleService.insert(new RoleEntity(userId,authorityId));
+			flag=roleService.insert(new RoleEntity(userId,authorityId))?flag++:flag;
 		}
-		return flag;
+		return flag==-1;
 	}
 
 	/**
@@ -272,19 +270,20 @@ public class ManagerController extends BaseController{
 	 * @param manager
 	 * @return
 	 */
-	private boolean addJob(ManagerEntity manager){
+	public boolean addJob(ManagerEntity manager){
+		System.out.println("ManagerController.addJob(...):"+manager);
 		//判断该管理员是否拥有此工作
-		boolean flag=true;
+		int flag=-1;
 		try {
 			//有此工作
 			if(managerService.findById(manager.getUserId()).getJobId()==manager.getJobId()){
-				flag=false;
+				flag++;
 			}
 		} catch (NoDataMatchException e) {//没与此工作
 			manager.setJoinTime(DateFormat.now());
 			manager.setModifyTime(DateFormat.now());
-			flag=managerService.insert(manager);
+			flag=managerService.insert(manager)?flag++:flag;
 		}
-		return flag;
+		return flag==-1;
 	}
 }

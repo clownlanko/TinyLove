@@ -1,4 +1,7 @@
 package top.genitalbean.vi.mapper.impl;
 
-public interface RoleMapper {
+import top.genitalbean.vi.mapper.BaseRepository;
+
+public interface RoleMapper extends BaseRepository {
+    Integer queryAuthoirityId(String userId);
 }

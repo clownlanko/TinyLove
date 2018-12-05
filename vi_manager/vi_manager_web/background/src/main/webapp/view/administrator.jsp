@@ -29,7 +29,7 @@
             <!--操作-->
             <div class="border clearfix">
        <span class="l_f">
-        <a href="javascript:void(0)" id="administrator_add" class="btn btn-warning"><i class="fa fa-plus"></i> 添加管理员</a>
+        <a href="javascript:void(0)" onclick="openAddManagerWindow()" id="administrator_add" class="btn btn-warning"><i class="fa fa-plus"></i> 添加管理员</a>
         <a href="javascript:void(0)" class="btn btn-danger"><i class="fa fa-trash"></i> 批量删除</a>
        </span>
                 <span class="r_f">共：<b id="quantity"></b>人</span>
@@ -72,78 +72,67 @@
     </div>
     <!--添加管理员-->
     <div id="add_administrator_style" class="add_menber" style="display:none">
-        <form action="" method="post" id="form-admin-add">
+        <form id="form-admin-add">
             <div class="form-group">
                 <label class="form-label"><span class="c-red">*</span>管理员：</label>
                 <div class="formControls">
-                    <input type="text" class="input-text" value="" placeholder="" id="user-name" name="user-name" datatype="*2-16" nullmsg="用户名不能为空">
+                    <input type="text" class="input-text" placeholder="用户Id" id="user-name" name="userId" datatype="*2-16" nullmsg="用户id不能为空">
                 </div>
                 <div class="col-4"> <span class="Validform_checktip"></span></div>
             </div>
             <div class="form-group">
-                <label class="form-label"><span class="c-red">*</span>初始密码：</label>
-                <div class="formControls">
-                    <input type="password" placeholder="密码" name="userpassword" autocomplete="off" value="" class="input-text" datatype="*6-20" nullmsg="密码不能为空">
-                </div>
-                <div class="col-4"> <span class="Validform_checktip"></span></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label "><span class="c-red">*</span>确认密码：</label>
+                <label class="form-label "><span class="c-red">*</span>薪资：</label>
                 <div class="formControls ">
-                    <input type="password" placeholder="确认新密码" autocomplete="off" class="input-text Validform_error" errormsg="您两次输入的新密码不一致！" datatype="*" nullmsg="请再输入一次新密码！" recheck="userpassword" id="newpassword2" name="newpassword2">
+                    <input type="text" class="input-text" placeholder="薪资" id="user-tel" name="salary" datatype="m" nullmsg="工作不能没有工资吧">
                 </div>
                 <div class="col-4"> <span class="Validform_checktip"></span></div>
             </div>
             <div class="form-group">
-                <label class="form-label "><span class="c-red">*</span>性别：</label>
-                <div class="formControls  skin-minimal">
-                    <label><input name="form-field-radio" type="radio" class="ace" checked="checked"><span class="lbl">保密</span></label>&nbsp;&nbsp;
-                    <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl">男</span></label>&nbsp;&nbsp;
-                    <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl">女</span></label>
-                </div>
-                <div class="col-4"> <span class="Validform_checktip"></span></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label "><span class="c-red">*</span>手机：</label>
-                <div class="formControls ">
-                    <input type="text" class="input-text" value="" placeholder="" id="user-tel" name="user-tel" datatype="m" nullmsg="手机不能为空">
-                </div>
-                <div class="col-4"> <span class="Validform_checktip"></span></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label"><span class="c-red">*</span>邮箱：</label>
-                <div class="formControls ">
-                    <input type="text" class="input-text" placeholder="@" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
-                </div>
-                <div class="col-4"> <span class="Validform_checktip"></span></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label">角色：</label>
+                <label class="form-label">职务：</label>
                 <div class="formControls "> <span class="select-box" style="width:150px;">
-				<select class="select" name="admin-role" size="1">
-					<option value="0">超级管理员</option>
-					<option value="1">管理员</option>
-					<option value="2">栏目主辑</option>
-					<option value="3">栏目编辑</option>
+				<select class="select" id="jobId" name="jobId" size="1">
+					<option selected>--请选择--</option>
 				</select>
 				</span> </div>
             </div>
             <div class="form-group">
-                <label class="form-label">备注：</label>
-                <div class="formControls">
-                    <textarea name="" cols="" rows="" class="textarea" placeholder="说点什么...100个字符以内" dragonfly="true" onkeyup="checkLength(this);"></textarea>
-                    <span class="wordage">剩余字数：<span id="sy" style="color:Red;">100</span>字</span>
-                </div>
-                <div class="col-4"> </div>
+                <label class="form-label">角色：</label>
+                <div class="formControls "> <span class="select-box" style="width:150px;">
+				<select class="select" id="authorityId" name="authorityId" size="1">
+					<option selected>--请选择--</option>
+				</select>
+				</span> </div>
             </div>
             <div>
-                <input class="btn btn-primary radius" type="submit" id="Add_Administrator" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                <input class="btn btn-primary radius" type="button" onclick="addManager()" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
             </div>
         </form>
     </div>
 </div>
 </body>
 <script type="text/javascript">
+    //显示职务
+    $.ajax({
+        url:"../vij.vi/query.vi",
+        type:"GET",
+        dataType:"json",
+        success:function (json) {
+            for(var i=0;i<json.data.length;i++){
+                $("#jobId").append("<option value='"+json.data[i].jobId+"'>"+json.data[i].jobName+"</option>");
+            }
+        }
+    });
+    //显示权限
+    $.ajax({
+        url:"../via.vi/query.vi",
+        type:"GET",
+        dataType:"json",
+        success:function (json) {
+            for(var i=0;i<json.data.length;i++){
+                $("#authorityId").append("<option value='"+json.data[i].authorityId+"'>"+json.data[i].authorityName+"</option>");
+            }
+        }
+    });
     //显示权限类别
     $.ready(
         $.ajax({
@@ -205,7 +194,7 @@
                     action .append($("<a onclick="+method+" href='#' title='"+(status==0?"启用":status==1?"停用":"已离职")+
                         "' class='"+(status==1?"btn btn-xs btn-success":"btn btn-xs")+"'><i class='fa fa-check  bigger-120'></i></a>"),
                         $("<a title='编辑' onclick='member_edit('编辑','member-add.html','4','','510')' href='#'  class='btn btn-xs btn-info'><i class='fa fa-edit bigger-120'></i></a>"),
-                        $("<a title='删除' href='#'  onclick='member_del(this,'"+json.data[i].userId+"')' class='btn btn-xs btn-warning' ><i class='fa fa-trash  bigger-120'></i></a>")
+                        $("<a title='删除' href='#'  onclick='member_del(this,\""+json.data[i].userId+"\")' class='btn btn-xs btn-warning' ><i class='fa fa-trash  bigger-120'></i></a>")
                     );
                     tr.append(box,id,name,phone,email,authorityName,jobName,state,action);
                     tbody.append(tr);
@@ -293,7 +282,6 @@
         elem: '#start',
         event: 'focus'
     });
-
     /*用户-停用*/
     function member_stop(obj,id,status,jobName){
         layer.confirm('确认要停用吗？',{
@@ -345,7 +333,7 @@
         layer_show(title,url,w,h);
     }
 
-    /*产品-删除*/
+    /*管理员-删除*/
     function member_del(obj,userId){
         layer.confirm('确认要删除吗？',{
             title:"微爱提示",
@@ -353,10 +341,12 @@
             btn:["确定","再想想"]
         },function(){
             $.ajax({
-                url:"../vim.vi/dm.vi?userId="+userId,
-                type:"DELETE",
+                url:"../vim.vi/dm.vi",
+                type:"POST",
+                data:"userId="+userId,
                 dataType:"json",
                 success:function (json) {
+                    console.info(json);
                     if(json.state==4){
                         layer.msg(json.message,{icon:1,time:1000});
                         $(obj).parents("tr").remove();
@@ -372,16 +362,31 @@
         });
     }
     /*添加管理员*/
-    $('#administrator_add').on('click', function(){
-        layer.open({
+    var index=-1;
+    function openAddManagerWindow(){
+        index=layer.open({
             type: 1,
             title:'添加管理员',
             area: ['700px',''],
             shadeClose: false,
-            content: $('#add_administrator_style'),
-
+            content: $('#add_administrator_style')
         });
-    })
+    }
+    function addManager(){
+        layer.close(index);
+        $.ajax({
+            url:"../vim.vi/am.vi",
+            type:"POST",
+            dataType:"json",
+            data:$("#form-admin-add").serialize(),
+            success:function (json) {
+                layer.alert(json.message,{
+                    title:"微爱提示",
+                    icon:1
+                });
+            }
+        });
+    }
     //表单验证提交
     $("#form-admin-add").Validform({
 

@@ -37,6 +37,13 @@ public class DateFormat {
         sdf.applyPattern(format);
         return sdf.format(time);
     }
+
+    /**
+     * 计算两个时间差，返回月数
+     * @param s
+     * @param e
+     * @return
+     */
     public static final long differenDate(Date s, Date e){
         return Math.abs(s.getTime()-e.getTime())/1000/60/60/24/30;
     }
