@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="type">
+    <insert id="method" parameterType="type" useGeneratedKeys="isUse">
+    </insert>
+    <delete id="method" parameterType="type">
+    </delete>
+    <update id="method" parameterType="type">
+    </update>
+    <select id="method" parameterType="type" resultType="type">
+    </select>
+</mapper>

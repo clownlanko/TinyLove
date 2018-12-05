@@ -7,10 +7,12 @@ import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.commons.util.DateFormat;
 import top.genitalbean.vi.commons.web.ResponseResult;
 import top.genitalbean.vi.pojo.ManagerEntity;
+import top.genitalbean.vi.pojo.RoleEntity;
 import top.genitalbean.vi.pojo.UserEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
 import top.genitalbean.vi.service.impl.JobService;
 import top.genitalbean.vi.service.impl.ManagerService;
+import top.genitalbean.vi.service.impl.RoleService;
 import top.genitalbean.vi.service.impl.UserService;
 
 import javax.servlet.http.HttpSession;
@@ -22,6 +24,7 @@ public class ManagerController extends BaseController{
 	@Autowired private ManagerService managerService;
 	@Autowired private UserService userService;
 	@Autowired private JobService jobService;
+	@Autowired private RoleService roleService;
 	/**
 	 * 用户登陆
 	 * @param name
@@ -135,7 +138,7 @@ public class ManagerController extends BaseController{
 		try {
 			result.setState(4);
 			result.setMessage("请尊重别人的隐私！");
-			result.setData(managerService.findByAuthorityId(managerService.queryAuthorityId(userId)));
+			result.setData(managerService.findByAuthorityId(roleService.queryAuthorityId(userId)));
 		} catch (NoDataMatchException e) {
 			result.setMessage("你没有权限查看别人的信息哦");
 			result.setState(3);
@@ -185,12 +188,12 @@ public class ManagerController extends BaseController{
 	 * 删除管理员
 	 */
 	@ResponseBody
-	@DeleteMapping("/dm.vi")
+	@PostMapping("/dm.vi")
 	public ResponseResult<Void> deleteManager(String userId){
 		ResponseResult<Void> result=new ResponseResult<>();
 		ManagerEntity manager = null;
 		try{
-			manager = managerService.findByUser(userId);
+			manager = managerService.findById(userId);
 		}catch (NoDataMatchException ex){
 			result.setMessage("请稍后再试");
 			result.setState(-1);
@@ -206,5 +209,82 @@ public class ManagerController extends BaseController{
 			result.setMessage("id为"+userId+"的用户离职还未超过6个月<br>暂不允许删除！");
 		}
 		return result;
+	}
+	/**
+	 * 删除多个管理员
+	 */
+	@ResponseBody
+	@PostMapping("/dms.vi")
+	public ResponseResult<Void> deleteManagers(String[] userId){
+		ResponseResult<Void> result = new ResponseResult<>();
+		return result;
+	}
+	/**
+	 * 添加管理员
+	 * 没有此管理员		添加工作添加权限
+	 * 有此管理员拥有此工作	不做任何处理
+	 * 有此管理员没有此工作  添加工作判断
+	 * 有此管理员拥有此权限	 不做任何处理
+	 * 有此管理员没有此权限  添加权限
+	 */
+	@ResponseBody
+	@PostMapping("/am.vi")
+	public ResponseResult<Void> addManager(ManagerEntity manager,Integer authorityId){
+		System.out.println("ManagerController.addManager(...)");
+		ResponseResult<Void> result = new ResponseResult<>();
+		if(addJob(manager)){
+			if(addAuthority(manager.getUserId(),authorityId)){
+				result.setState(4);
+				result.setMessage("恭喜"+manager.getUserId()+"成为管理员<br>请您多多照顾");
+			}else {
+				result.setState(-1);
+				result.setMessage("添加权限失败");
+			}
+		}else{
+			result.setState(-1);
+			result.setMessage("用户"+manager.getUserId()+"可能已经拥有此工作了");
+		}
+		return result;
+	}
+
+	/**
+	 * 添加权限
+	 * @param userId
+	 * @param authorityId
+	 * @return
+	 */
+	private boolean addAuthority(String userId, Integer authorityId){
+		//判断该管理员是否拥有此权限
+		boolean flag=true;
+		try {
+			//拥有此权限
+			if(roleService.queryAuthorityId(userId) == authorityId){
+				flag=false;
+			}
+		} catch (NoDataMatchException e) {//未拥有此权限
+			flag=roleService.insert(new RoleEntity(userId,authorityId));
+		}
+		return flag;
+	}
+
+	/**
+	 * 添加管理员职务
+	 * @param manager
+	 * @return
+	 */
+	private boolean addJob(ManagerEntity manager){
+		//判断该管理员是否拥有此工作
+		boolean flag=true;
+		try {
+			//有此工作
+			if(managerService.findById(manager.getUserId()).getJobId()==manager.getJobId()){
+				flag=false;
+			}
+		} catch (NoDataMatchException e) {//没与此工作
+			manager.setJoinTime(DateFormat.now());
+			manager.setModifyTime(DateFormat.now());
+			flag=managerService.insert(manager);
+		}
+		return flag;
 	}
 }
