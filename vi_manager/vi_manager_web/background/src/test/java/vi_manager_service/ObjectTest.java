@@ -26,7 +26,7 @@ public class ObjectTest {
 		manager.setJobId(200);
 		manager.setSalary(100D);
 		manager.setStatus(1);
-		System.out.println(managerService.findById(manager.getUserId()));
+		System.out.println(managerService.findByUserIdAndJobId(manager.getUserId(),manager.getJobId()));
 //		if(managerController.addJob(manager)){
 //			if(managerController.addAuthority(manager.getUserId(),100)){
 //				System.out.println(roleService.insert(new RoleEntity(manager.getUserId(), 100)));

@@ -30,7 +30,7 @@
             <div class="border clearfix">
        <span class="l_f">
         <a href="javascript:void(0)" onclick="openAddManagerWindow()" id="administrator_add" class="btn btn-warning"><i class="fa fa-plus"></i> 添加管理员</a>
-        <a href="javascript:void(0)" class="btn btn-danger"><i class="fa fa-trash"></i> 批量删除</a>
+        <a href="javascript:void(0)" onclick="deleteManagers()" class="btn btn-danger"><i class="fa fa-trash"></i> 批量删除</a>
        </span>
                 <span class="r_f">共：<b id="quantity"></b>人</span>
             </div>
@@ -154,6 +154,7 @@
             }
         })
     );
+
     function notice(){
         layer.alert("你没有权限查看其他管理员哦<br>你可以直接管辖的管理员已经在右边显示",{
             title:"微爱提示",
@@ -182,7 +183,7 @@
                     var authorityName=$("<td>"+json.data[i].authorityName+"</td>");
                     var jobName=$("<td>"+json.data[i].jobName+"</td>");
                     var name=$("<td>"+json.data[i].userName+"</td>");
-                    var id=$("<td>"+json.data[i].userId+"</td>");
+                    var id=$("<td class='manager'>"+json.data[i].userId+"</td>");
                     var action=$("<td class='td-manage'></td>");
                     var status=json.data[i].status;
                     var state=$("<td class='td-status'><span class='"+
@@ -332,7 +333,28 @@
     function member_edit(title,url,id,w,h){
         layer_show(title,url,w,h);
     }
-
+    //删除多个管理员
+    function deleteManagers(){
+        var check=$("#sample_table tbody tr td label input");//td
+        var td=$("#sample_table tbody tr .manager");//td
+        var box=new Array();
+        var index=0;
+        for(var i=0;i<td.length;i++){
+            if(check.get(i).checked){
+                box[index++]=td.get(i).innerHTML;
+            }
+        }
+        console.info(box);
+        $.ajax({
+            url:"../vim.vi/dms.vi",
+            data:"userId="+box,
+            type:"POST",
+            dataType:"json",
+            success:function (json) {
+                layer.msg(json.message,{icon:3,title:"微爱提示",time:2000})
+            }
+        });
+    }
     /*管理员-删除*/
     function member_del(obj,userId){
         layer.confirm('确认要删除吗？',{

@@ -5,6 +5,7 @@ import top.genitalbean.vi.mapper.BaseRepository;
 import top.genitalbean.vi.pojo.ManagerEntity;
 import top.genitalbean.vi.pojo.vo.Manager_Role;
 
+import java.net.Inet4Address;
 import java.util.List;
 
 public interface ManagerMapper extends BaseRepository{
@@ -12,6 +13,6 @@ public interface ManagerMapper extends BaseRepository{
 	Manager_Role findByUser(@Param("name") String name,@Param("password") String password);
 	List<Manager_Role> findByAuthorityId(Integer authorityId);
 	ManagerEntity findById(String userId);
-	boolean deleteByMultipartId(String[] userId);
-	List<ManagerEntity> queryByMultipartId(String[] userId);
+	Integer deleteByMultipartId(String[] userId);
+	ManagerEntity findByUserIdAndJobId(@Param("userId") String userId,@Param("jobId") Integer jobId);
 }

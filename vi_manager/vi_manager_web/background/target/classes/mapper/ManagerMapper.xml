@@ -43,8 +43,18 @@
                status,
                join_time   AS joinTime,
                modify_time AS modifyTime
-        from vi_manager
+        FROM vi_manager
         WHERE user_id = #{userId};
+    </select>
+    <select id="findByUserIdAndJobId" resultType="top.genitalbean.vi.pojo.ManagerEntity">
+        SELECT user_id     AS userId,
+               job_id      AS jobId,
+               salary,
+               status,
+               join_time   AS joinTime,
+               modify_time AS modifyTime
+        FROM vi_manager
+        WHERE user_id = #{userId} AND job_id=#{jobId};
     </select>
     <!--查询所管辖范围内的员工-->
     <select id="findByAuthorityId" parameterType="java.lang.Integer"

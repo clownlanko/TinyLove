@@ -42,6 +42,15 @@ public class ManagerService implements BaseService{
         else
             throw new NoDataMatchException("No manager of userId as "+userId);
     }
+    /**根据用户id和职务id查找
+     */
+	public ManagerEntity findByUserIdAndJobId(String userId,Integer jobId)throws NoDataMatchException{
+		ManagerEntity manager = managerMapper.findByUserIdAndJobId(userId,jobId);
+		if(manager!=null)
+			return manager;
+		else
+			throw new NoDataMatchException("No manager of userId as "+userId);
+	}
 	/**
      * 根据用户id查找
 	 */
@@ -65,7 +74,11 @@ public class ManagerService implements BaseService{
 		else
 			throw new NoDataMatchException("the "+id+"wasn't manager just one");
 	}
-
+	public boolean deleteByMultipartId(String[] userId){
+		Integer integer = managerMapper.deleteByMultipartId(userId);
+		System.out.println(integer+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		return integer ==userId.length;
+	}
 	@Override
 	public <T> boolean insert(T t) {
 		return managerMapper.insert(t)==1;

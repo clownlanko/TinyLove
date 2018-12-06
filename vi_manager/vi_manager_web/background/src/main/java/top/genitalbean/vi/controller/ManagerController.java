@@ -1,5 +1,8 @@
 package top.genitalbean.vi.controller;
 
+import com.alibaba.druid.support.json.JSONUtils;
+import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonAnyFormatVisitor;
+import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +19,7 @@ import top.genitalbean.vi.service.impl.RoleService;
 import top.genitalbean.vi.service.impl.UserService;
 
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -217,6 +221,11 @@ public class ManagerController extends BaseController{
 	@PostMapping("/dms.vi")
 	public ResponseResult<Void> deleteManagers(String[] userId){
 		ResponseResult<Void> result = new ResponseResult<>();
+		System.out.println(Arrays.toString(userId));
+		if(managerService.deleteByMultipartId(userId)){
+			result.setState(4);
+			result.setMessage(JSONUtils.toJSONString(userId)+"已删除");
+		}
 		return result;
 	}
 	/**
@@ -234,10 +243,9 @@ public class ManagerController extends BaseController{
 		System.out.println("ManagerController.addManager(...)");
 		ResponseResult<Void> result = new ResponseResult<>();
 		if(addJob(manager)){
-			if(addAuthority(manager.getUserId(),authorityId)){
+				addAuthority(manager.getUserId(),authorityId);
 				result.setState(4);
 				result.setMessage("恭喜"+manager.getUserId()+"成为管理员<br>请您多多照顾");
-			}
 		}else{
 			result.setState(-1);
 			result.setMessage("用户"+manager.getUserId()+"可能已经拥有此工作了");
@@ -251,18 +259,14 @@ public class ManagerController extends BaseController{
 	 * @param authorityId
 	 * @return
 	 */
-	public boolean addAuthority(String userId, Integer authorityId){
+	public void addAuthority(String userId, Integer authorityId){
 		//判断该管理员是否拥有此权限
-		int flag=-1;
 		try {
 			//拥有此权限
-			if(roleService.queryAuthorityId(userId) == authorityId){
-				flag++;
-			}
+			roleService.queryAuthorityId(userId);
 		} catch (NoDataMatchException e) {//未拥有此权限
-			flag=roleService.insert(new RoleEntity(userId,authorityId))?flag++:flag;
+			roleService.insert(new RoleEntity(userId,authorityId));
 		}
-		return flag==-1;
 	}
 
 	/**
@@ -276,7 +280,7 @@ public class ManagerController extends BaseController{
 		int flag=-1;
 		try {
 			//有此工作
-			if(managerService.findById(manager.getUserId()).getJobId()==manager.getJobId()){
+			if(managerService.findByUserIdAndJobId(manager.getUserId(),manager.getJobId()).getJobId()==manager.getJobId()){
 				flag++;
 			}
 		} catch (NoDataMatchException e) {//没与此工作
