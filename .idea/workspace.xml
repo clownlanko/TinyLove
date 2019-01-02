@@ -10,51 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0e342-fa9c-459b-8b62-cbbea62151cf" name="Default Changelist" comment="前后台页面同时进攻">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TinyLove.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963/storage_v2/_src_/schema/tiny_love.UQ0zWQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963/storage_v2/_src_/schema/tiny_love.UQ0zWQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/AuthorityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/JobMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/ManagerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViCartList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViGoodsDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViGoodsRemark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViLogistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViObjectImages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViObjectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/vo/ManagerRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/AuthorityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/JobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/AuthorityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/ManagerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/index.jsp" afterDir="false" />
@@ -229,7 +184,6 @@
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/view/500.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/view/home.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/view/passpage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" afterDir="false" />
@@ -461,7 +415,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546423356492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546423661212" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -614,7 +568,7 @@
       <workItem from="1546337372443" duration="3251000" />
       <workItem from="1546344383500" duration="257000" />
       <workItem from="1546344665136" duration="8811000" />
-      <workItem from="1546396655020" duration="12863000" />
+      <workItem from="1546396655020" duration="13166000" />
     </task>
     <task id="LOCAL-00001" summary="前后台页面同时进攻">
       <created>1546422658653</created>
@@ -630,7 +584,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546422702459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="前后台页面同时进攻">
+      <created>1546423462705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546423462705</updated>
+    </task>
+    <task id="LOCAL-00004" summary="前后台页面同时进攻">
+      <created>1546423616028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546423616028</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -657,7 +625,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30286000" />
+    <option name="totallyTimeSpent" value="30589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
