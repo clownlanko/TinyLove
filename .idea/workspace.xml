@@ -10,9 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0e342-fa9c-459b-8b62-cbbea62151cf" name="Default Changelist" comment="前后台页面同时进攻">
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/java/top/genitalbean/vi/controller/BaseController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/java/top/genitalbean/vi/controller/PassController.java" afterDir="false" />
@@ -187,6 +184,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -404,6 +403,11 @@
               <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
               <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
+              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -415,7 +419,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546423848067" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546423948409" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -568,7 +572,7 @@
       <workItem from="1546337372443" duration="3251000" />
       <workItem from="1546344383500" duration="257000" />
       <workItem from="1546344665136" duration="8811000" />
-      <workItem from="1546396655020" duration="13166000" />
+      <workItem from="1546396655020" duration="13702000" />
     </task>
     <task id="LOCAL-00001" summary="前后台页面同时进攻">
       <created>1546422658653</created>
@@ -598,7 +602,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546423616028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="前后台页面同时进攻">
+      <created>1546423861234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546423861234</updated>
+    </task>
+    <task id="LOCAL-00006" summary="前后台页面同时进攻">
+      <created>1546423882650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546423882650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -625,7 +643,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30589000" />
+    <option name="totallyTimeSpent" value="31125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -660,7 +678,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.26012793" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.26012793" />
       <window_info anchor="right" id="Database" order="6" weight="0.21055438" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
