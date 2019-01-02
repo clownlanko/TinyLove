@@ -15,7 +15,6 @@ public class DateFormat {
     public static final String DATE_TIME=DATE+" HH:mm:ss";
     public static final String DATE_TIME_WEEK=DATE_TIME+" E";
     private static final SimpleDateFormat sdf=new SimpleDateFormat();
-
     /**
      * @param format 格式化模板
      * @see #DATE,#DATE_TIME,#DATE_TIME_WEEKs
@@ -37,7 +36,6 @@ public class DateFormat {
         sdf.applyPattern(format);
         return sdf.format(time);
     }
-
     /**
      * 计算两个时间差，返回月数
      * @param s
