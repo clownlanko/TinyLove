@@ -1,21 +1,22 @@
 package top.genitalbean.vi.commons.web;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ResponseBody
+@ToString
 public class ResponseResult <T>{
-	private Integer state=-1;
-	private String message="好像什么都没有发生哦";
+	private Integer state;
+	private String message;
     private T data;
-    public ResponseResult(T t){
+	public ResponseResult(T t) {
+		this.data=t;
+	}
+    public ResponseResult(Integer state,T t) {
+    	this.state=state;
     	this.data=t;
 	}
 	public ResponseResult(Integer state,String message){

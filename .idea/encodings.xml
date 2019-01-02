@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vi_commons" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_mapper" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_pojo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/face" charset="UTF-8" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_web/vi_background" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vi_main/main_web/vi_face" charset="UTF-8" />
   </component>
 </project>

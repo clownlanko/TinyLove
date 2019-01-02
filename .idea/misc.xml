@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/background" />
-    <file type="web" url="file://$PROJECT_DIR$/vi_manager/vi_manager_web/face" />
-    <type id="Spring" />
+    <file type="web" url="file://$PROJECT_DIR$/vi_main/main_web/vi_background" />
+    <file type="web" url="file://$PROJECT_DIR$/vi_main/main_web/vi_face" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,8 +12,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectResources">
-    <resource url="http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd" location="/media/kittycoco/LinuxFile/mybatis-3-mapper.dtd" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

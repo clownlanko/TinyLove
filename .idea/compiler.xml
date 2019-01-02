@@ -2,29 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="background" />
-        <module name="face" />
+        <module name="main_dao" />
+        <module name="main_entity" />
+        <module name="main_service" />
+        <module name="vi_background" />
         <module name="vi_commons" />
-        <module name="vi_manager_mapper" />
-        <module name="vi_manager_pojo" />
-        <module name="vi_manager_service" />
+        <module name="vi_face" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="background" target="1.8" />
-      <module name="face" target="1.8" />
-      <module name="TinyLove" target="1.8" />
-      <module name="vi_commons" target="1.8" />
-      <module name="vi_manager" target="1.8" />
-      <module name="vi_manager_mapper" target="1.8" />
-      <module name="vi_manager_pojo" target="1.8" />
-      <module name="vi_manager_service" target="1.8" />
-      <module name="vi_manager_web" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
