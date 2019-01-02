@@ -9,7 +9,968 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef0e342-fa9c-459b-8b62-cbbea62151cf" name="Default Changelist" comment="" />
+    <list default="true" id="fef0e342-fa9c-459b-8b62-cbbea62151cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/CheckPhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DigestContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/File4VI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/IDFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/SendVerificationCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/background_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/background_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/face_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/face_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TinyLove.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinylove.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinylove.eddx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi.eddx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/exception/NoDataMatchException.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/exception/NoDataMatchException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/DateFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/EncodePrivateContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/IDGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/RegexString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/web/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/web/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/NoDataMatchException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/DateFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/EncodePrivateContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/IDGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/util/RegexString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/target/classes/top/genitalbean/vi/commons/web/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_commons/vi_commons.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/AuthorityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/JobMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/ManagerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/src/main/java/top/genitalbean/vi/mapper/impl/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/ManagerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/target/classes/top/genitalbean/vi/mapper/impl/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_mapper/vi_manager_mapper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/AuthorityEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/JobEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/ManagerEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/RoleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/src/main/java/top/genitalbean/vi/pojo/vo/Manager_Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/ManagerEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/target/classes/top/genitalbean/vi/pojo/vo/Manager_Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_pojo/vi_manager_pojo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/AuthorityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/ManagerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/java/top/genitalbean/vi/service/impl/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/resources/mapper/AuthorityMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/resources/mapper/JobMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/resources/mapper/ManagerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/ManagerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/target/classes/top/genitalbean/vi/service/impl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_service/vi_manager_service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/.springBeans" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/background.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/AuthorityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/java/top/genitalbean/vi/interceptor/LoginInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/resources/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/WdatePicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/lang/zh-tw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/WdatePicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/datePicker.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/default/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/default/img.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/twoer/datepicker-dev.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/twoer/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/twoer/img.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/twoer/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/whyGreen/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/whyGreen/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/My97DatePicker/skin/whyGreen/img.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/Validform/5.3.2/Validform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/Validform/5.3.2/Validform.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/Validform/5.3.2/passwordStrength-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/datatables/1.10.0/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/icheck.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/jquery.icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/minimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/icheck/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/cancel_upload.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/handlers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.speed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/swfupload_fp9.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/swfupload/upload-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/ASPJson.class.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/MultiformProcessor.class.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/PathFormatter.class.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/Uploader.Class.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/action_config.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/action_crawler.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/action_list.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/action_upload.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/config_loader.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/asp/controller.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/lib/ueditor-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ActionEnter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ConfigManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/PathFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/AppInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/BaseState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/FileType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MIMEType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MultiState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/ImageHunter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Base64Uploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/BinaryUploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/StorageManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Uploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/Config.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/ConfigHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/CrawlerHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/Handler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/ListFileHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/NotSupportedHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/PathFormater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/App_Code/UploadHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/Web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/controller.ashx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/net/net.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/Uploader.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/action_crawler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/action_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/action_upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/php/controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/ueditor/1.4.3/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/cropper/cropper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/cropper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/cropper/uploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/expressInstall.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/image-upload/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/image-upload/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/icons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/progress.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/md5-demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/md5-demo/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/requirejs/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/requirejs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/requirejs/require.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/server/crossdomain.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/server/fileupload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/server/fileupload2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/server/preview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.fis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.noimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.noimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.nolog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.nolog.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/webuploader/0.1.5/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/1_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/1_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/diy/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/line_conn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/zTreeStandard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/img/zTreeStandard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/css/zTreeStyle/zTreeStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/js/jquery.ztree.all-3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/js/jquery.ztree.core-3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/js/jquery.ztree.excheck-3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/js/jquery.ztree.exedit-3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/Widget/zTree/js/jquery.ztree.exhide-3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/profile-pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/avatars/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/ace-ie.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/ace-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/ace-skins.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/ace.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/bootstrap-editable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/bootstrap-timepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/chosen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/colorbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/dropzone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/echartsHome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/font-awesome-ie7.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/jquery-ui-1.10.3.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/jquery-ui-1.10.3.full.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/jquery.gritter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/css/ui.jqgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/chord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/eventRiver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/force.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/scatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/venn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/chart/wordCloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/theme/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/theme/infographic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/dist/theme/macarons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/font/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/ace-elements.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/ace-extra.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/ace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/bootbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/bootstrap-colorpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/bootstrap-tag.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/bootstrap-wysiwyg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/chosen.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/date-time/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/date-time/bootstrap-timepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/date-time/daterangepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/date-time/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/dropzone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/flot/jquery.flot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/flot/jquery.flot.pie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/flot/jquery.flot.resize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/fuelux/data/fuelux.tree-sampledata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/fuelux/fuelux.spinner.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/fuelux/fuelux.tree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/fuelux/fuelux.wizard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jqGrid/i18n/grid.locale-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jqGrid/jquery.jqGrid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery-2.0.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery-ui-1.10.3.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery-ui-1.10.3.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.autosize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.colorbox-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.easy-pie-chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.gritter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.hotkeys.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.inputlimiter.1.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.knob.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.maskedinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.mobile.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.nestable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.sparkline.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.ui.touch-punch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/markdown/bootstrap-markdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/markdown/markdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/typeahead-bs2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/x-editable/ace-editable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/js/x-editable/bootstrap-editable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/need/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/dahong/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/dahong/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/molv/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/laydate/skins/molv/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/extend/layer.ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/assets/layer/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/css/easyui_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/font/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/icon_error_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/icon_right_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/icon_warning_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/indexhead_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/login_bgx.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/login_m_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/loginbg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/loginbg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/loginbg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/loginsj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/r1_c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/star-off-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/star-on-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/images/xtbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/H-ui.admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/H-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/dragDivResize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/easyloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/easyui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/html5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery-1.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/jquery.raty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/lrtk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/ad1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/ad2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/ad3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/cp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1252.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1270.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1396.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/1663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/339.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/458.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/6116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/618.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/644.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/690.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/740.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/741.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/logo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/logo/logo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/p_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/products/分组.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/administrator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/main/webapp/view/manager_info.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/src/test/java/vi_manager_service/ObjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/mapper/ManagerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/controller/ManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-lang3-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/druid-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/lombok-1.16.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/mysql-connector-java-8.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/pagehelper-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/protobuf-java-2.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-api-1.7.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jcl-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-jdbc-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-orm-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-tx-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/spring-webmvc-5.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_commons-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_mapper-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_pojo-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/lib/vi_manager_service-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/images/loginsj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/TinyLove/view/manager_info.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/mapper/ManagerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/controller/ManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/classes/top/genitalbean/vi/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/background/target/test-classes/vi_manager_service/ObjectTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/face.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/face/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_manager/vi_manager_web/vi_manager_web.iml" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/vi_commons/target/" />
@@ -68,7 +1029,7 @@
           <entry key="JAVA" value="1637" />
           <entry key="JSP" value="60" />
           <entry key="JavaScript" value="763" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="SQL" value="15" />
           <entry key="Scratch" value="1695" />
           <entry key="XML" value="388" />
@@ -82,10 +1043,11 @@
           <entry key="JAVA" value="20" />
           <entry key="JSP" value="5" />
           <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="6" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="25" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
     </session>
@@ -138,6 +1100,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -210,6 +1173,7 @@
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -234,7 +1198,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546422596953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546422657492" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -246,6 +1210,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\TinyLove" />
       <recent name="E:\ideaProject\TinyLove\vi_main\main_web\vi_face\src\main\webapp\js" />
       <recent name="E:\ideaProject\TinyLove\vi_main\main_web\vi_face\src\main\webapp\css" />
       <recent name="E:\ideaProject\TinyLove\vi_main\main_web\vi_face\src\main" />
@@ -386,7 +1351,7 @@
       <workItem from="1546337372443" duration="3251000" />
       <workItem from="1546344383500" duration="257000" />
       <workItem from="1546344665136" duration="8811000" />
-      <workItem from="1546396655020" duration="11924000" />
+      <workItem from="1546396655020" duration="12173000" />
     </task>
     <servers />
   </component>
@@ -414,10 +1379,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29347000" />
+    <option name="totallyTimeSpent" value="29596000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -430,7 +1395,7 @@
       <window_info anchor="bottom" id="SQL Generator" weight="0.36909872" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17060086" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16971" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -449,7 +1414,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.26012793" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.26012793" />
       <window_info anchor="right" id="Database" order="6" weight="0.21055438" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -460,6 +1425,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前后台页面同时进攻" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后台页面同时进攻" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vi_main/main_entity/pom.xml">
@@ -480,13 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -776,6 +1738,16 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/11ca5624-c53d-419c-ab05-382d201fc963/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
