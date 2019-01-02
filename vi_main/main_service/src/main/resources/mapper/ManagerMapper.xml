@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.vi.mapper.impl.ManagerMapper">
+    <!--根据用户名和密码查询做登陆-->
+    <select id="findByUser" resultType="top.genitalbean.vi.pojo.vo.ManagerRole">
+        SELECT user_id          AS userId,
+               user_name        AS userName,
+               password,
+               phone,
+               email,
+               job_name         AS jobName,
+               job_remark       AS jobRemark,
+               salary,
+               authority_name   AS authorityName,
+               authority_remark AS authorityRemark,
+               status
+        FROM manager_role
+        WHERE user_name = #{name}
+          AND password = #{password};
+    </select>
+    <!--根据用户id查询-->
+    <select id="findByUserId" resultType="top.genitalbean.vi.pojo.vo.ManagerRole" parameterType="java.lang.String">
+        SELECT user_id          AS userId,
+               user_name        AS userName,
+               password,
+               phone,
+               email,
+               job_name         AS jobName,
+               job_remark       AS jobRemark,
+               salary,
+               authority_name   AS authorityName,
+               authority_remark AS authorityRemark,
+               status
+        FROM manager_role
+        WHERE user_id = #{userId};
+    </select>
+    <select id="findById" resultType="top.genitalbean.vi.pojo.ViManager" parameterType="java.lang.String">
+        SELECT user_id     AS userId,
+               job_id      AS jobId,
+               salary,
+               status,
+               join_time   AS joinTime,
+               modify_time AS modifyTime
+        FROM vi_manager
+        WHERE user_id = #{userId};
+    </select>
+    <select id="findByUserIdAndJobId" resultType="top.genitalbean.vi.pojo.ViManager">
+        SELECT user_id     AS userId,
+               job_id      AS jobId,
+               salary,
+               status,
+               join_time   AS joinTime,
+               modify_time AS modifyTime
+        FROM vi_manager
+        WHERE user_id = #{userId} AND job_id=#{jobId};
+    </select>
+    <!--查询所管辖范围内的员工-->
+    <select id="findByAuthorityId" parameterType="java.lang.Integer"
+            resultType="top.genitalbean.vi.pojo.vo.ManagerRole">
+        SELECT mr.user_id       AS userId,
+               user_name        AS userName,
+               password,
+               phone,
+               email,
+               job_name         AS jobName,
+               job_remark       AS jobRemark,
+               salary,
+               authority_name   AS authorityName,
+               authority_remark AS authorityRemark,
+               status
+        FROM manager_role mr
+                 JOIN vi_role vr ON
+                mr.user_id = vr.user_id
+                 JOIN (SELECT vr.user_id,va.parent_id
+                       FROM vi_role vr
+                                JOIN
+                                vi_authority va ON vr.authority_id = va.authority_id) va ON va.user_id = mr.user_id
+        WHERE va.parent_id = #{authorityId};
+    </select>
+    <!--修改管理员状态-->
+    <update id="update" parameterType="top.genitalbean.vi.pojo.ViManager">
+        UPDATE vi_manager SET
+        <if test="salary!=null">salary=#{salary},</if>
+        <if test="status!=null">status=#{status},</if>
+        modify_time=#{modifyTime} WHERE user_id=#{userId} AND job_id=#{jobId};
+    </update>
+    <!--根据用户id删除管理员-->
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE
+        FROM vi_manager
+        WHERE user_id = #{userId};
+    </delete>
+    <!--删除多个管理员-->
+    <delete id="deleteByMultipartId">
+        DELETE FROM vi_manager WHERE user_id IN
+        <foreach collection="array" separator="," open="(" close=")" item="id">
+            #{id}
+        </foreach>
+    </delete>
+    <!--添加管理员-->
+    <insert id="insert" parameterType="top.genitalbean.vi.pojo.ViManager">
+        INSERT INTO vi_manager(user_id, salary, job_id, status, modify_time, join_time)
+        VALUES (#{userId},#{salary},#{jobId},1,#{modifyTime},#{joinTime});
+    </insert>
+</mapper>

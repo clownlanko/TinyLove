@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TinyLove">
+    <output-path>$PROJECT_DIR$/out/artifacts/TinyLove</output-path>
+    <root id="archive" name="TinyLove.war">
+      <element id="artifact" artifact-name="vif" />
+      <element id="artifact" artifact-name="vib" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.vi.mapper.impl.RoleMapper">
+    <insert id="insert" parameterType="top.genitalbean.vi.pojo.ViRole">
+      INSERT INTO vi_role(user_id, authority_id) VALUES (#{userId},#{authorityId});
+    </insert>
+    <!--根据用户id查询权限-->
+    <select id="queryAuthoirityId" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT authority_id
+        FROM vi_role
+        WHERE user_id = #{userId};
+    </select>
+</mapper>
