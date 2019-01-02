@@ -1,0 +1,25 @@
+.constomer-center>ul{
+	background-color: transparent;
+	margin-left: -20px;
+	position: fixed;
+	z-index: 5;
+	display: none;
+}
+.constomer-center>ul>li{
+	background-color: transparent;
+	text-align: left;
+	line-height: 30px;
+	height: 30px;
+	width: 118px;
+	min-height: 30px;
+	margin: 10px 22px;
+	padding: 0px;
+	border: none;
+	clear: both;
+}
+.constomer-center:hover ul{
+	display: block;
+}
+.slider img{
+	height: 500px;
+}

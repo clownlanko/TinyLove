@@ -1129,7 +1129,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546424728145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546425158465" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1282,7 +1282,7 @@
       <workItem from="1546337372443" duration="3251000" />
       <workItem from="1546344383500" duration="257000" />
       <workItem from="1546344665136" duration="8811000" />
-      <workItem from="1546396655020" duration="14503000" />
+      <workItem from="1546396655020" duration="15717000" />
     </task>
     <task id="LOCAL-00001" summary="前后台页面同时进攻">
       <created>1546422658653</created>
@@ -1340,7 +1340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546424671460</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="前后台页面同时进攻">
+      <created>1546425119609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546425119609</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1367,7 +1374,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31926000" />
+    <option name="totallyTimeSpent" value="33140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
