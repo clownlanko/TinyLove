@@ -11,7 +11,7 @@
  Target Server Version : 80012
  File Encoding         : 65001
 
- Date: 02/01/2019 17:35:48
+ Date: 04/01/2019 18:37:31
 */
 
 SET NAMES utf8mb4;
@@ -31,6 +31,15 @@ CREATE TABLE `vi_authority`  (
   INDEX `parent_id`(`parent_id`) USING BTREE,
   CONSTRAINT `vi_authority_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `vi_authority` (`authority_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 105 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_authority
+-- ----------------------------
+INSERT INTO `vi_authority` VALUES (100, '超级管理员', '拥有至高无上的权力', NULL);
+INSERT INTO `vi_authority` VALUES (101, '普通管理员', '一般的增删改查', 100);
+INSERT INTO `vi_authority` VALUES (102, '用户管理', '管理用户', 101);
+INSERT INTO `vi_authority` VALUES (103, '商户管理', '管理商户', 101);
+INSERT INTO `vi_authority` VALUES (104, '广告管理', '管理广告', 101);
 
 -- ----------------------------
 -- Table structure for vi_business
@@ -108,7 +117,17 @@ CREATE TABLE `vi_job`  (
   `job_remark` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`job_id`) USING BTREE,
   UNIQUE INDEX `name`(`job_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 204 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 206 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_job
+-- ----------------------------
+INSERT INTO `vi_job` VALUES (200, '人事经理', '人前人后忙');
+INSERT INTO `vi_job` VALUES (201, '项目经理', '项目技术处理');
+INSERT INTO `vi_job` VALUES (202, '策划经理', '项目策划');
+INSERT INTO `vi_job` VALUES (203, '设计经理', 'UI设计');
+INSERT INTO `vi_job` VALUES (204, '运维师', '项目维护');
+INSERT INTO `vi_job` VALUES (205, '总经理', '老大');
 
 -- ----------------------------
 -- Table structure for vi_logistics
@@ -129,13 +148,18 @@ CREATE TABLE `vi_logistics`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `vi_manager`;
 CREATE TABLE `vi_manager`  (
-  `user_id` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `salary` decimal(8, 2) NULL DEFAULT NULL,
   `job_id` int(2) NULL DEFAULT NULL,
   `status` int(1) NULL DEFAULT NULL,
   `modify_time` datetime(0) NULL DEFAULT NULL,
   `join_time` datetime(0) NULL DEFAULT NULL
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_manager
+-- ----------------------------
+INSERT INTO `vi_manager` VALUES ('viu06341546400705173', 5000.00, 205, 1, '2019-01-03 14:33:42', '2019-01-03 14:33:42');
 
 -- ----------------------------
 -- Table structure for vi_object_images
@@ -177,9 +201,14 @@ CREATE TABLE `vi_order`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `vi_role`;
 CREATE TABLE `vi_role`  (
-  `user_id` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `authority_id` int(11) NULL DEFAULT NULL
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_role
+-- ----------------------------
+INSERT INTO `vi_role` VALUES ('viu06341546400705173', 100);
 
 -- ----------------------------
 -- Table structure for vi_shop_type
@@ -189,9 +218,22 @@ CREATE TABLE `vi_shop_type`  (
   `type_id` int(11) NOT NULL AUTO_INCREMENT,
   `type_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `parent_id` int(11) NULL DEFAULT NULL,
-  PRIMARY KEY (`type_id`) USING BTREE,
-  UNIQUE INDEX `type_name`(`type_name`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  `remark` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`type_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_shop_type
+-- ----------------------------
+INSERT INTO `vi_shop_type` VALUES (1, '欧式婚纱', 0, '');
+INSERT INTO `vi_shop_type` VALUES (2, '中式婚纱', 0, '国风再美不过，传承中国经典文化');
+INSERT INTO `vi_shop_type` VALUES (3, '双双之选', 0, '男女套装搭配，更省更配');
+INSERT INTO `vi_shop_type` VALUES (5, '单男士', 1, NULL);
+INSERT INTO `vi_shop_type` VALUES (6, '单男士', 2, NULL);
+INSERT INTO `vi_shop_type` VALUES (7, '单女士', 1, NULL);
+INSERT INTO `vi_shop_type` VALUES (8, '单女士', 2, NULL);
+INSERT INTO `vi_shop_type` VALUES (9, '单男士', 3, NULL);
+INSERT INTO `vi_shop_type` VALUES (10, '单女士', 3, NULL);
 
 -- ----------------------------
 -- Table structure for vi_user
@@ -209,6 +251,11 @@ CREATE TABLE `vi_user`  (
   `modify_time` date NULL DEFAULT NULL,
   PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of vi_user
+-- ----------------------------
+INSERT INTO `vi_user` VALUES ('viu06341546400705173', 'lanko', '87d9bb400c0634691f0e3baaf1e2fd0d', '2019-01-02', NULL, '17387457144', 'clownlanko@vi.com', NULL, '2019-01-03');
 
 -- ----------------------------
 -- View structure for manager_role
