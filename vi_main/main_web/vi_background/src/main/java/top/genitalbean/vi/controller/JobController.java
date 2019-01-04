@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import top.genitalbean.vi.commons.web.ResponseResult;
-import top.genitalbean.vi.pojo.JobEntity;
+import top.genitalbean.vi.pojo.ViJob;
 import top.genitalbean.vi.service.impl.JobService;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public class JobController {
     @Autowired private JobService jobService;
     @GetMapping("/query.vi")
     @ResponseBody
-    public ResponseResult<List<JobEntity>> query(){
+    public ResponseResult<List<ViJob>> query(){
         return new ResponseResult<>(jobService.query());
     }
 }

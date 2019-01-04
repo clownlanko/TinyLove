@@ -8,11 +8,11 @@
     <meta name="author" content="lanko"/>
     <meta name="keywords" content="微爱，婚纱"/>
     <meta name="description" content="再微小的爱也应该得到敬重。"/>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/vi.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/TinyLove/vif/images/vi.png"/>
     <title>微爱</title>
-    <link href="../css/bootstrap.css" rel='stylesheet' type='text/css'/>
-    <link href="../css/style.css" rel='stylesheet' type='text/css'/>
-    <link href="../css/home.css" rel='stylesheet' type='text/css'/>
+    <link href="/TinyLove/vif/bootstrap/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="/TinyLove/vif/css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="/TinyLove/vif/css/home.css" rel='stylesheet' type='text/css'/>
 </head>
 <body>
 <div class="header">
@@ -20,7 +20,7 @@
         <div class="container">
             <!--logo-->
             <div class="logo">
-                <a href="index.html"><img src="../images/TinyLove.png" alt=""/></a>
+                <a href="index.html"><img src="/TinyLove/vif/images/TinyLove.png" alt=""/></a>
             </div>
             <!--功能菜单-->
             <div>
@@ -35,7 +35,7 @@
                         <li>登陆</li>
                     </a>
                     <a href="#">
-                        <li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li>
+                        <li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="/TinyLove/vif/images/bag.png" alt=""/></li>
                     </a>
                     <a href="#">
                         <li class="constomer-center">个人中心
@@ -56,19 +56,19 @@
 <div class="slider">
     <div class="callbacks_container">
         <ul class="rslides" id="slider">
-            <li><img src="../images/background/1.jpg" class="img-responsive" alt=""/>
+            <li><img src="/TinyLove/vif/images/background/1.jpg" class="img-responsive" alt=""/>
                 <div class="banner_desc">
                     <h1>We Provide Worlds top fashion for less fashionpress.</h1>
                     <h2>FashionPress the name of the of hi class fashion Web FreePsd.</h2>
                 </div>
             </li>
-            <li><img src="../images/background/2.jpg" class="img-responsive" alt=""/>
+            <li><img src="/TinyLove/vif/images/background/2.jpg" class="img-responsive" alt=""/>
                 <div class="banner_desc">
                     <h1>Duis autem vel eum iriure dolor in hendrerit.</h1>
                     <h2>Claritas est etiam processus dynamicus, qui sequitur .</h2>
                 </div>
             </li>
-            <li><img src="../images/background/3.jpg" class="img-responsive" alt=""/>
+            <li><img src="/TinyLove/vif/images/background/3.jpg" class="img-responsive" alt=""/>
                 <div class="banner_desc">
                     <h1>Ut wisi enim ad minim veniam, quis nostrud.</h1>
                     <h2>Mirum est notare quam littera gothica, quam nunc putamus.</h2>
@@ -100,7 +100,7 @@
                     <div class="menu_box">
                         <h3 class="menu_head">商品分类</h3>
                         <ul class="menu">
-                            <li class="item4"><a href="#"><img class="arrow-img" src="../images/f_menu.png" alt=""/>中国风</a>
+                            <li class="item4"><a href="#"><img class="arrow-img" src="/TinyLove/vif/images/f_menu.png" alt=""/>中国风</a>
                                 <ul class="cute">
                                     <li class="subitem1"><a href="#">Cute Kittens </a></li>
                                     <li class="subitem2"><a href="#">Strange Stuff </a></li>
@@ -118,7 +118,7 @@
                         <div class="grid_1">
                             <a href="#">
                                 <div class="b-link-stroke b-animate-go  thickbox">
-                                    <img src="../images/p1.jpg" class="img-responsive" alt=""/>
+                                    <img src="/TinyLove/vif/images/p1.jpg" class="img-responsive" alt=""/>
                                 </div>
                             </a>
                             <div class="grid_2">
@@ -147,7 +147,7 @@
                         <div class="grid_1">
                             <a href="#">
                                 <div class="b-link-stroke b-animate-go  thickbox">
-                                    <img src="../images/p1.jpg" class="img-responsive" alt=""/>
+                                    <img src="/TinyLove/vif/images/p1.jpg" class="img-responsive" alt=""/>
                                 </div>
                             </a>
                             <div class="grid_2">
@@ -179,7 +179,7 @@
     <div class="container">
         <div class="col-md-3 f_grid1">
             <h3>关于我们</h3>
-            <a href="#"><img src="../images/TinyLove.png" alt=""/></a>
+            <a href="#"><img src="/TinyLove/vif/images/TinyLove.png" alt=""/></a>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's
                 standard dummy text ever since the 1500s,</p>
@@ -238,8 +238,8 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script src="../js/responsiveslides.min.js"></script>
-<script src="../js/home.js"></script>
+<script type="text/javascript" src="/TinyLove/vif/js/jquery.min.js"></script>
+<script src="/TinyLove/vif/js/responsiveslides.min.js"></script>
+<script src="/TinyLove/vif/js/home.js"></script>
 <!-- 	<script type="text/javascript" src="js/hover_pack.js"></script> -->
 </html>

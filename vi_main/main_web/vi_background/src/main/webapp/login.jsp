@@ -4,16 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="shortcut icon" href="favicon.ico">
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-<link rel="stylesheet" href="assets/css/ace.min.css" />
-<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
-<link rel="stylesheet" href="css/style.css"/>
-<script src="assets/js/ace-extra.min.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="assets/layer/layer.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="/TinyLove/vib/images/vi.png">
+<link href="/TinyLove/vib/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/TinyLove/vib/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/TinyLove/vib/assets/css/ace.min.css" />
+<link rel="stylesheet" href="/TinyLove/vib/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/TinyLove/vib/assets/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/TinyLove/vib/css/style.css"/>
 <title>微爱·后台登陆</title>
 </head>
 <body class="login-layout">
@@ -42,7 +39,7 @@
 								<i class="icon-coffee green"></i> 管理员登陆
 							</h4>
 							<div class="login_icon">
-								<img src="images/login.png" />
+								<img src="/TinyLove/vib/images/login.png" />
 							</div>
 							<form id="login">
 								<fieldset>
@@ -86,45 +83,9 @@
 	<div class="loginbm">
 		版权所有 2018 <a href="http://www.genitalbean.top/TinyLove">那家印象有限公司</a>
 	</div>
+    <script src="/TinyLove/vib/js/jquery.min.js"></script>
+	<script src="/TinyLove/vib/assets/js/ace-extra.min.js"></script>
+	<script src="/TinyLove/vib/layui/layui.js" type="text/javascript"></script>
+	<script src="/TinyLove/vib/js/login.js"></script>
 </body>
-<script>
-	$('#login_btn').click(function() {
-        var error = 0;
-        $("input").each(function() {
-            if ($(this).val() == "") {
-                layer.alert($(this).attr("placeholder") + "不能为空！\r\n", {
-                    title: '微爱提示',
-                    icon: 0
-                });
-                error++;
-                return false;
-            }
-    });
-	if (error > 0) {
-		return false;
-	}
-	$.ajax({
-		type:"POST",
-		url:"vim.vi/login.vi",
-		data:$("#login").serialize(),
-		success:function(json){
-            if(json.state==-1){
-                layer.alert(json.message, {
-                    title : "微爱提示",
-                    icon : 2
-                });
-            }
-			if(json.state==4){
-                layer.confirm(json.message, {
-                    icon:1,
-					title:"是否进入",
-                    btn: ['进入','取消']
-                }, function(){
-                   location.href = "view/index.jsp";
-                });
-			}
-		}
-	});
-	})
-</script>
 </html>

@@ -5,11 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import top.genitalbean.vi.commons.exception.NoDataMatchException;
 import top.genitalbean.vi.commons.util.DateFormat;
+import top.genitalbean.vi.commons.util.DigestContent;
 import top.genitalbean.vi.commons.web.ResponseResult;
-import top.genitalbean.vi.pojo.ManagerEntity;
-import top.genitalbean.vi.pojo.RoleEntity;
-import top.genitalbean.vi.pojo.UserEntity;
-import top.genitalbean.vi.pojo.vo.Manager_Role;
+import top.genitalbean.vi.pojo.ViManager;
+import top.genitalbean.vi.pojo.ViRole;
+import top.genitalbean.vi.pojo.ViUser;
+import top.genitalbean.vi.pojo.vo.ManagerRole;
 import top.genitalbean.vi.service.impl.JobService;
 import top.genitalbean.vi.service.impl.ManagerService;
 import top.genitalbean.vi.service.impl.RoleService;
@@ -35,13 +36,13 @@ public class ManagerController extends BaseController{
 	 */
 	@PostMapping("/login.vi")
 	@ResponseBody
-	public ResponseResult<Manager_Role> login(@RequestParam("name") String name,
-											  @RequestParam("password") String password,
-											  HttpSession session) {
-		Manager_Role manager;
-		ResponseResult<Manager_Role> result  = new ResponseResult<>();
+	public ResponseResult<ManagerRole> login(@RequestParam("name") String name,
+											 @RequestParam("password") String password,
+											 HttpSession session) {
+		ManagerRole manager;
+		ResponseResult<ManagerRole> result  = new ResponseResult<>();
 		try {
-			manager = managerService.findByUser(name, password);
+			manager = managerService.findByUser(name, DigestContent.encode(password));
 			result.setState(4);
 			result.setMessage("登陆成功");
 			result.setData(manager);
@@ -79,18 +80,18 @@ public class ManagerController extends BaseController{
 	@RequestMapping("/changepwd.vi")
 	public ResponseResult<Void> changePassword(String username,String oldPwd,String newPwd,HttpSession session){
 		ResponseResult<Void> result=new ResponseResult<>();
-		Manager_Role user = null;
+		ManagerRole user = null;
 		try{
-			user = managerService.findByUser(username, oldPwd);
+			user = managerService.findByUser(username, DigestContent.encode(oldPwd));
 		} catch (NoDataMatchException e) {
 			result.setState(-1);
 			result.setMessage("请检查你的用户名或密码");
 			return result;
 		}
-		if(user !=null?userService.changePassword(user.getUserId(),newPwd):false){
+		if(user !=null?userService.changePassword(user.getUserId(),DigestContent.encode(newPwd)):false){
 			result.setState(4);
 			result.setMessage("修改成功");
-			session.setAttribute("vim",managerService.findByUser(username,newPwd));
+			session.setAttribute("vim",managerService.findByUser(username,DigestContent.encode(newPwd)));
 		}
 		return result;
 	}
@@ -101,10 +102,10 @@ public class ManagerController extends BaseController{
 	 */
 	@ResponseBody
 	@PostMapping("/us.vi")
-	public ResponseResult<Void> updateSelf(UserEntity userEntity,HttpSession session){
-		Manager_Role manager_role= (Manager_Role) session.getAttribute("vim");
+	public ResponseResult<Void> updateSelf(ViUser userEntity, HttpSession session){
+		ManagerRole manager_role= (ManagerRole) session.getAttribute("vim");
 		ResponseResult<Void> rr=new ResponseResult<>();
-		Manager_Role mr= null;
+		ManagerRole mr= null;
 		try {
 			mr = managerService.findByUser(manager_role.getUserName(),manager_role.getPassword());
 		} catch (NoDataMatchException e) {
@@ -134,8 +135,8 @@ public class ManagerController extends BaseController{
 	 */
 	@ResponseBody
 	@GetMapping("/vimall.vi")
-	public ResponseResult<List<Manager_Role>> queryByAuthority(String userId){
-		ResponseResult<List<Manager_Role>> result = new ResponseResult<>();
+	public ResponseResult<List<ManagerRole>> queryByAuthority(String userId){
+		ResponseResult<List<ManagerRole>> result = new ResponseResult<>();
 		try {
 			result.setState(4);
 			result.setMessage("请尊重别人的隐私！");
@@ -151,8 +152,8 @@ public class ManagerController extends BaseController{
      */
     @ResponseBody
     @GetMapping("/fbui.vi")
-    public ResponseResult<Manager_Role> findByUserId(String userId){
-        ResponseResult<Manager_Role> result=new ResponseResult<>();
+    public ResponseResult<ManagerRole> findByUserId(String userId){
+        ResponseResult<ManagerRole> result=new ResponseResult<>();
         try {
             result.setState(4);
             result.setData(managerService.findByUserId(userId));
@@ -174,7 +175,7 @@ public class ManagerController extends BaseController{
 			result.setState(2);
 			return result;
 		}
-		ManagerEntity manager=new ManagerEntity();
+		ViManager manager=new ViManager();
 		manager.setUserId(userId);
 		manager.setStatus(status==1?0:1);
 		manager.setModifyTime(DateFormat.now());
@@ -192,7 +193,7 @@ public class ManagerController extends BaseController{
 	@PostMapping("/dm.vi")
 	public ResponseResult<Void> deleteManager(String userId){
 		ResponseResult<Void> result=new ResponseResult<>();
-		ManagerEntity manager = null;
+		ViManager manager = null;
 		try{
 			manager = managerService.findById(userId);
 		}catch (NoDataMatchException ex){
@@ -235,7 +236,7 @@ public class ManagerController extends BaseController{
 	 */
 	@ResponseBody
 	@PostMapping("/am.vi")
-	public ResponseResult<Void> addManager(ManagerEntity manager,Integer authorityId){
+	public ResponseResult<Void> addManager(ViManager manager,Integer authorityId){
 		System.out.println(manager.getUserId()+":"+manager.getJobId()+":"+authorityId);
 		System.out.println("ManagerController.addManager(...)");
 		ResponseResult<Void> result = new ResponseResult<>();
@@ -262,7 +263,7 @@ public class ManagerController extends BaseController{
 			//拥有此权限
 			roleService.queryAuthorityId(userId);
 		} catch (NoDataMatchException e) {//未拥有此权限
-			roleService.insert(new RoleEntity(userId,authorityId));
+			roleService.insert(new ViRole(userId,authorityId));
 		}
 	}
 
@@ -271,7 +272,7 @@ public class ManagerController extends BaseController{
 	 * @param manager
 	 * @return
 	 */
-	public boolean addJob(ManagerEntity manager){
+	public boolean addJob(ViManager manager){
 		System.out.println("ManagerController.addJob(...):"+manager);
 		//判断该管理员是否拥有此工作
 		int flag=-1;

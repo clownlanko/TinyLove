@@ -142,7 +142,7 @@ public class PassController extends BaseController {
             result.setMessage("登陆成功，即将跳转...");
         } catch (NoDataMatchException e) {
             result.setState(-1);
-            result.setMessage("你还没有注册哦,请先注册!<br>验证码在有效时间内依然可用于注册哦(^v^)");
+            result.setMessage("用户名或密码错误,请检查后再试");
         }
         return result;
     }

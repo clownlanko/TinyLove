@@ -23,3 +23,9 @@
 .slider img{
 	height: 500px;
 }
+.footer>.container>div{
+	float: left;
+}
+.content_top.container>col-md-9{
+	float: right;
+}
