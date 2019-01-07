@@ -14,5 +14,14 @@
         <module name="vi_face" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vi.commons" target="1.5" />
+      <module name="vi.manager" target="1.8" />
+      <module name="vi.manager.mapper" target="1.8" />
+      <module name="vi.manager.pojo" target="1.8" />
+      <module name="vi.manager.service" target="1.8" />
+      <module name="vi.manager.web" target="1.8" />
+      <module name="vi.manager.web.background" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -8,156 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fef0e342-fa9c-459b-8b62-cbbea62151cf" name="Default Changelist" comment="前后台页面同时进攻">
-      <change afterPath="$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/ShopTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ShopTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/ShopTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ShopTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/TinyLove.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/addProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/addProductCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/administrator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/managerInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProductCategory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/categoryManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/managerInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963/storage_v2/_src_/schema/tiny_love.UQ0zWQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11ca5624-c53d-419c-ab05-382d201fc963/storage_v2/_src_/schema/tiny_love.UQ0zWQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/assets/avatars/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/loginsj.png" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/vi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/jquery-1.7.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/jquery-1.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/jquery-1.9.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/administrator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/administrator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/manager_info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/java/top/genitalbean/vi/controller/PassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/java/top/genitalbean/vi/controller/PassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/view/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -191,41 +49,13 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tiny_love: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tiny_love: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tiny_love: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="vi_shop_type: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="basicDataSource" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tiny_love: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="11ca5624-c53d-419c-ab05-382d201fc963" />
+    </checked>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-639260503">
@@ -308,50 +138,53 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1757203122">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="sql" value="2" />
+          <entry key="xml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="66" />
+          <entry key="sql" value="3" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="66" />
+          <entry key="Scratch" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ShopTypeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addShopType#0;class#ShopTypeController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ShopTypeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/ShopTypeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/categoryManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="362">
               <caret line="39" column="92" selection-start-line="39" selection-start-column="92" selection-end-line="39" selection-end-column="92" />
             </state>
           </provider>
@@ -360,12 +193,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="714">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <element signature="e#142#152#0" />
-                <element signature="e#739#1249#0" />
+                <element signature="e#1076#1526#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -373,12 +223,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProductCategory.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="960">
               <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -386,7 +232,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/ShopTypeMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="408">
               <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
             </state>
           </provider>
@@ -395,8 +241,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="240">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
               <folding>
                 <element signature="e#822#823#0" expanded="true" />
                 <element signature="e#887#888#0" expanded="true" />
@@ -408,7 +254,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
+            <state relative-caret-position="864">
               <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
               <folding>
                 <element signature="e#290#291#0" expanded="true" />
@@ -459,7 +305,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vi_main/main_web/vi_face/pom.xml" />
         <option value="$PROJECT_DIR$/vi_main/main_web/pom.xml" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/vi_commons/src/main/java/top/genitalbean/vi/commons/util/SendVerificationCode.java" />
@@ -489,7 +334,6 @@
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/login.js" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/manager_info.jsp" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/manager_info.js" />
-        <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/index.js" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/managerInfo.jsp" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProduct.jsp" />
@@ -502,13 +346,15 @@
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/categoryManage.jsp" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProductCategory.jsp" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/addProductCategory.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/11ca5624-c53d-419c-ab05-382d201fc963/console.sql" />
         <option value="$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ShopTypeService.java" />
         <option value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java" />
         <option value="$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ShopTypeController.java" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/assets/css/ace.min.css" />
         <option value="$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/ShopTypeMapper.xml" />
+        <option value="$PROJECT_DIR$/vi_commons/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/11ca5624-c53d-419c-ab05-382d201fc963/console.sql" />
+        <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js" />
       </list>
     </option>
@@ -529,8 +375,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.6.0\conf\settings.xml" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.0/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -559,7 +405,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -576,36 +421,6 @@
               <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
               <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
               <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
               <item name="main_web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -661,18 +476,6 @@
               <item name="vi_background" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_web" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_background" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -684,43 +487,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_web" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_background" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyLove" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyLove" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_main" type="462c0819:PsiDirectoryNode" />
-              <item name="main_web" type="462c0819:PsiDirectoryNode" />
-              <item name="vi_background" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546598205451" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546824172129" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -768,7 +549,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TinyLove" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.5" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="TinyLove" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/TinyLove/vib" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -877,6 +658,9 @@
       <workItem from="1546496313087" duration="12603000" />
       <workItem from="1546565598345" duration="7147000" />
       <workItem from="1546586649649" duration="9706000" />
+      <workItem from="1546599043030" duration="357000" />
+      <workItem from="1546599418338" duration="659000" />
+      <workItem from="1546600096570" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="前后台页面同时进攻">
       <created>1546422658653</created>
@@ -977,13 +761,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62867000" />
+    <option name="totallyTimeSpent" value="67024000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23257576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -993,7 +776,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29967776" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3866878" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1006,15 +789,15 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.39097744" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.3423138" />
       <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.36909872" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.26012793" />
-      <window_info anchor="right" id="Database" order="6" weight="0.17430703" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.325" />
+      <window_info anchor="right" id="Database" order="6" weight="0.17424242" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -1030,21 +813,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="前后台页面同时进攻" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/star-on-big.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/user.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/xtbg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/images/loginbg2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_face/src/main/webapp/images/vi.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1077,18 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="113" column="32" lean-forward="true" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="32" />
-          <folding>
-            <element signature="e#1505#1511#0#HTML" expanded="true" />
-            <element signature="e#1511#1517#0#HTML" expanded="true" />
-            <element signature="e#1521#1527#0#HTML" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#5507#5512#0#HTML" expanded="true" />
-            <element signature="e#7055#7060#0#HTML" expanded="true" />
-            <element signature="e#10024#10030#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,12 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="116" column="71" lean-forward="true" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5878#5894#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,31 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!block;n#notice#0" />
-            <element signature="e#4258#5488#0" />
-            <element signature="e#4678#4969#0" />
-            <element signature="e#5101#5482#0" />
-            <element signature="n#!!block;n#checkLength#0" />
-            <element signature="e#6088#6274#0" />
-            <element signature="n#!!block;n#member_stop#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#member_start#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#member_edit#0" />
-            <element signature="n#!!block;n#deleteManagers#0" />
-            <element signature="n#!!block;n#member_del#0" />
-            <element signature="n#!!block;n#openAddManagerWindow#0" />
-            <element signature="n#!!block;n#addManager#0" />
-            <element signature="e#10981#11473#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1178,38 +903,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="method#login#0;class#ManagerController#0" />
-            <element signature="method#logout#0;class#ManagerController#0" />
-            <element signature="method#changePassword#0;class#ManagerController#0" />
-            <element signature="method#updateSelf#0;class#ManagerController#0" />
-            <element signature="method#queryByAuthority#0;class#ManagerController#0" />
-            <element signature="method#findByUserId#0;class#ManagerController#0" />
-            <element signature="method#changeStatus#0;class#ManagerController#0" />
-            <element signature="method#deleteManager#0;class#ManagerController#0" />
-            <element signature="method#deleteManagers#0;class#ManagerController#0" />
-            <element signature="method#addManager#0;class#ManagerController#0" />
-            <element signature="method#addAuthority#0;class#ManagerController#0" />
-            <element signature="method#addJob#0;class#ManagerController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/addProduct.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1241,24 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding>
-            <element signature="e#139#353#0" />
-            <element signature="e#423#652#0" />
-            <element signature="e#782#1109#0" />
-            <element signature="e#1142#1281#0" />
-            <element signature="e#1599#1779#0" />
-            <element signature="e#1722#1793#0" />
-            <element signature="e#1802#1891#0" />
-            <element signature="e#1904#2167#0" />
-            <element signature="e#2184#2703#0" />
-            <element signature="n#!!block;n#showCode#0" />
-            <element signature="n#!!block;n#member_stop#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#member_start#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#member_edit#0" />
-            <element signature="n#!!block;n#member_del#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,31 +959,10 @@
     <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProductCategory.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/addProductCategory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#f#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/11ca5624-c53d-419c-ab05-382d201fc963/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1314,55 +973,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/ShopTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ShopTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="136" column="63" lean-forward="true" selection-start-line="136" selection-start-column="63" selection-end-line="136" selection-end-column="63" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/categoryManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="92" selection-start-line="39" selection-start-column="92" selection-end-line="39" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -1373,28 +987,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/controller/ShopTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="504">
           <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/java/top/genitalbean/vi/service/impl/ShopTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_dao/src/main/java/top/genitalbean/vi/mapper/impl/ShopTypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addShopType#0;class#ShopTypeController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/addProductCategory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/main/resources/mapper/ShopTypeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="408">
           <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_service/src/test/java/ObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="240">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#887#888#0" expanded="true" />
@@ -1402,13 +1045,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_entity/src/main/java/top/genitalbean/vi/pojo/ViShopType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiny_love.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/11ca5624-c53d-419c-ab05-382d201fc963/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/java/top/genitalbean/vi/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="32" column="86" selection-start-line="32" selection-start-column="86" selection-end-line="32" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/view/categoryManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="39" column="92" selection-start-line="39" selection-start-column="92" selection-end-line="39" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vi_main/main_web/vi_background/src/main/webapp/js/categoryManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="714">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#142#152#0" />
-            <element signature="e#739#1249#0" />
+            <element signature="e#1076#1526#0" />
           </folding>
         </state>
       </provider>
@@ -1419,7 +1116,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>vib</last-edited>
+          <last-edited>vi_background:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

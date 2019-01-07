@@ -7,19 +7,17 @@ $(function() {
 	});
     var tree=new Array();
     $.get("/TinyLove/vib/stc/sts.vi",function (result) {
-        console.info(result.data);
 		for(var i=0;i<result.data.length;i++){
 			for(var j=0;j<result.data[i].children.length;j++){
                 var node={
-                    id:result.data[i].children[j].typeId,
-                    pId:result.data[i].children[j].parentId,
-                    name:result.data[i].children[j].typeName,
-                    remark:result.data[i].children[j].remark
+                    "typeId":result.data[i].children[j].typeId,
+                    "parentId":result.data[i].children[j].parentId,
+                    "name":result.data[i].children[j].typeName,
+                    "remark":result.data[i].children[j].remark
                 };
                 tree[j]=node;
             }
 		}
-        // console.error(tree.toString());
     });
     var setting = {
         view: {
@@ -50,7 +48,7 @@ $(function() {
     };
     var t = $("#treeDemo");
     t = $.fn.zTree.init(t, setting, tree);
-    demoIframe = $("#testIframe");
+    var demoIframe = $("#testIframe");
     var zTree = $.fn.zTree.getZTreeObj("tree");
 });
 //初始化宽度、高度  
@@ -63,9 +61,6 @@ $(window).resize(function() {
 })
 
 /**************/
-
-
-var zNodes;
 
 var code;
 
